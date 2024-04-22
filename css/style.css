@@ -313,7 +313,7 @@ span{
     gap:20px;
 }
 
-.faqs-content h2{
+.faqs-content h2, .hdw h2{
     font-size: 55px;
     color:#000;
     line-height: 1em;
@@ -535,4 +535,137 @@ display: block; /* Show content when accordion is active */
     text-align: center;
     text-decoration: none;
     border-radius: 5px;
+}
+
+.content.our-story h3 {
+    color: #000;
+}
+
+.team-sec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-section-step.step-2.team-sec {
+    display: flex;
+    flex-direction: column;
+    max-width: 1330px;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.content.our-story.team, .card-image, .join.content, .faQs-btn {
+    text-align: center;
+    align-items: center;
+}
+
+.content.our-story.team p, .hdw-flex p {
+    text-align: center;
+    width: 80%;
+}
+
+.team-images .image.card {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    padding: 50px;
+    width: 100%;
+}
+
+.team-images {
+    display: flex;
+    gap: 20px;
+}
+
+.team-images .card-image img {
+    width: 70%;
+}
+
+.team-images .card-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.card-icon {
+    display: flex;
+    justify-content: flex-end;
+}
+.card-text h3, p {
+    color: #fff;
+}
+
+.line::before {
+    content: "";
+    display: block;
+    margin: 15px 0;
+    border-bottom: 1px solid #707070;
+}
+
+.card-icon img {
+    height: 50px;
+    width: auto;
+}
+
+.vet-proc .public-section {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+section#vet-proc {
+    flex-direction: column;
+    gap: 100px;
+}
+
+.vet-proc-column {
+    display: flex;
+    width: 100%;
+    max-width: 1330px;
+}
+
+.vet-proc-content {
+    justify-content: center;
+    padding: 50px;
+}
+
+.inner-main-sec.contact {
+    max-width: 1140px;
+}
+
+.contact-icons {
+    display: flex;
+    gap: 20px;
+}
+
+section.join {
+    padding: 200px;
+}
+
+.follow-btn.membership {
+    width: 330px;
+}
+
+.hdw.inner-main-sec {
+    justify-content: center;
+}
+
+.hdw-row {
+    display: flex;
+    gap: 20px;
+}
+
+.hdw-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.hdw-row .hdw-flex h3 {
+    font-size: 25px;
+    color: #000;
+    text-align: center;
 }
