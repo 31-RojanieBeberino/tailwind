@@ -1,0 +1,538 @@
+@font-face {
+    font-family: 'General Sans';
+    src: url(../fonts/GeneralSans-Bold.otf);
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'General Sans';
+    src: url(../fonts/GeneralSans-Semibold.otf);
+    font-weight: 600;
+}
+
+
+@font-face {
+    font-family: 'General Sans';
+    src: url(../fonts/GeneralSans-Medium.otf);
+    font-weight: 500;
+}
+
+
+@font-face {
+    font-family: 'General Sans';
+    src: url(../fonts/GeneralSans-Regular.otf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'General Sans';
+    src: url(../fonts/GeneralSans-Light.otf);
+    font-weight: 300;
+}
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+h1, h2, h3, h4, h5, p, a, div, input, select, textarea {
+    font-family: 'General Sans';
+}
+
+
+
+.public-section{
+    background-position: center center;
+    background-size: cover;
+    padding:60px 20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.section-how-it-works{
+    height: 500px;
+    position: relative;
+}
+
+.section-how-it-works::before{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #00000070;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.inner-main-sec{
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:100px;
+}
+
+.hiw-content{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 2;
+    position: relative;
+}
+
+.hiw-content h2{
+    font-size: 80px;
+    font-weight: 600;
+    color:#fff;
+    line-height: 1em;
+}
+
+span{
+    color:#FF6700;
+}
+
+.hiw-content p{
+    font-size: 25px;
+    color:#fff;
+    line-height: 1.5em;
+}
+ 
+
+.inner-section-step div{
+    flex:1;
+}
+
+.cont-image img {
+    width:100%;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.content h3{
+    font-size: 45px;
+    color:#FF6700;
+    line-height: 1em;
+}
+
+.content p{
+    font-size: 20px;
+    color:#000;
+    line-height: 1.4em;
+}
+
+.inner-section-follow{
+    padding:50px;
+    height: 400px;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.inner-section-follow::before{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #00000070;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+
+.follow-content{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:30px;
+}
+
+.follow-content h4{
+    font-size: 35px;
+    font-weight: 500;
+    color:#fff;
+    line-height: 1.2em;
+    text-align: center;
+}
+
+.follow-btn{
+    padding:20px;
+    width: 250px;
+    background-color: #FF6700;
+    color:#fff;
+    font-size: 18px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+.section-subs{
+    height: 500px;
+}
+
+.section-subs{
+    position: relative;
+}
+
+
+.section-subs::before{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #00000070;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.inner-section-subs {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.subs-content{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    align-items: center;
+}
+
+.subs-content h2{
+    font-size: 55px;
+    text-align: center;
+    color:#fff;
+    line-height: 1em;
+    font-weight: 600;
+}
+
+
+.subs-content p{
+    font-size: 20px;
+    text-align: center;
+    color:#fff;
+    line-height: 1.2em;
+    font-weight: 400;
+}
+
+.subs-content form{
+    width: 100%;
+    display: flex;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.subs-content form input[type="email"]{
+    width: 75%;
+    padding:15px 20px;
+    border:none;
+    font-family: 'General Sans';
+    font-size: 16px;
+    color:#000;
+    font-size: 20px;
+}
+
+.subs-content form input[type="submit"]{
+    width: 25%;
+    border:none;
+    border-radius: 10px;
+    background-color: #FF6700;
+    color: #fff;
+    font-family: 'General Sans';
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+.section-faqs{
+    height: 500px;
+}
+
+.faqs-banner{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.faqs-banner h2{
+    font-size: 75px;
+    text-align: center;
+    color:#000;
+    line-height: 1em;
+    font-weight: 600;
+}
+
+
+.faqs-banner p{
+    font-size: 25px;
+    text-align: center;
+    color:#000;
+    line-height: 1.5em;
+    font-weight: 400;
+}
+
+.inner-section-faqs-sec-one{
+    gap:60px;
+}
+
+.inner-section-faqs-sec-one div{
+    flex:1;
+}
+
+.faqs-image img{
+    width: 100%;
+}
+
+.faqs-content{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.faqs-content h2{
+    font-size: 55px;
+    color:#000;
+    line-height: 1em;
+    font-weight: 600;
+}
+
+
+
+.accordion {
+    max-width: 100%;
+}
+
+.accordion .accordion-item {
+box-shadow: 0px 0px 5px #00000067;
+border-radius: 5px;
+margin-bottom: 20px;
+overflow: hidden; /* Ensure smooth animation */
+}
+
+.accordion .accordion-header {
+background-color: #f4f4f4;
+padding: 20px;
+cursor: pointer;
+display: flex;
+font-size: 20px;
+justify-content: space-between;
+align-items: center;
+transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.accordion .accordion-header .icon {
+transition: transform 0.3s ease; /* Smooth transition for icon rotation */
+}
+
+.accordion .accordion-content {
+padding: 20px;
+display: none;
+}
+
+.accordion .accordion-item.active .accordion-header {
+background-color: #e0e0e0;
+}
+
+.accordion .accordion-item.active .accordion-header .icon {
+transform: rotate(90deg); /* Rotate icon when accordion is active */
+}
+
+.accordion .accordion-item.active .accordion-content {
+display: block; /* Show content when accordion is active */
+}
+
+
+
+
+.inner-section-contact-form{
+    padding: 50px;
+    border-radius: 20px;
+    background-color: #F5F5F5;
+    gap:50px;
+}
+
+.inner-section-contact-form div{
+    flex: 1;
+}
+
+.contact-sec {
+    display: flex;
+    flex-direction: column;
+    gap:25px;
+}
+
+
+.contact-sec h3{
+    font-size: 40px;
+    color:#000;
+    line-height: 1em;
+    font-weight: 600;
+}
+
+.contact-sec p{
+    font-size: 20px;
+    color:#000;
+    line-height: 1.4em;
+    font-weight: 400;
+}
+
+.contact-sec form{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+
+.contact-sec form input[type="text"], input[type="email"], input[type="tel"], select, textarea{
+    padding:15px 20px;
+    background-color: transparent;
+    color:#000;
+    border: 1px solid #0000005d;
+    border-radius: 5px;
+    outline: none;
+}
+
+.contact-sec form input[type="submit"]{
+    width: 200px;
+    background-color: #FF6700;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color:#fff;
+    padding:15px 20px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+}
+
+.bot-form-deitals{
+    font-size: 15px!important;
+    color:#00000085!important;
+    font-weight: 500;
+}
+
+.phone-email{
+    display: flex;
+    gap: 15px;
+}
+
+.phone-email input{
+    flex: 1;
+}
+
+::placeholder{
+    color:#000;
+}
+
+.contact-image img{
+    width: 100%;
+}
+
+.inner-section-contact-details{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.contact-details-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+    width: 90%;
+}
+
+.contact-details-content h2{
+    font-size: 65px;
+    color:#000;
+    line-height: 1em;
+    font-weight: 600;
+}
+
+.contact-details-content p{
+    font-size: 20px;
+    color:#000;
+    line-height: 1.3em;
+    font-weight: 400;
+}
+
+
+.contact-details-card{
+    display: flex;
+    gap:50px;
+    width: 100%;
+}
+
+
+.detail-card{
+    padding:30px;
+    border-radius: 15px;
+    background-color: #F5F5F5;
+    display: flex;
+    gap:40px;
+    flex: 1;
+}
+
+.card, .number{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:20px;
+}
+
+.card{
+    width: 45%;
+}
+
+.number{
+    width: 55%;
+}
+
+
+.card h4, .number h4{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.card p{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.contact-btn{
+    width: 100%;
+    padding:15px 20px;
+    color:#fff;
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: uppercase;
+    background-color: #FF6700;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
