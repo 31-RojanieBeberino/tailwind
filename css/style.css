@@ -56,9 +56,77 @@ h1, h2, h3, h4, h5, p, a, div, input, select, textarea {
     width: 100%;
 }
 
+.footer-section {
+    background-position: center center;
+    background-size: cover;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
 .section-how-it-works{
     height: 500px;
     position: relative;
+}
+
+.homepage {
+    height: 800px;
+}
+
+.home-banner {
+    width: 60% !important;
+}
+
+.home-banner-sec {
+    justify-content: center;
+}
+
+.homepage img {
+    filter: invert(50%);
+    height: 50px;
+}
+
+.disc-section {
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+
+}
+
+.dis.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.discover-card {
+    background: #fff;
+    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+}
+
+.card-div {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.discover-flex {
+    display: flex;
+    gap: 20px;
+}
+
+.discover-card img, .exp-card img {
+    height: 400px;
+    width: 100%;
 }
 
 .section-how-it-works::before{
@@ -101,7 +169,7 @@ span{
     color:#FF6700;
 }
 
-.hiw-content p{
+.hiw-content p {
     font-size: 25px;
     color:#fff;
     line-height: 1.5em;
@@ -245,7 +313,16 @@ span{
     border-radius: 10px;
 }
 
-.subs-content form input[type="email"]{
+.home-banner form {
+    width: 80%;
+    display: flex;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.subs-content form input[type="email"],
+.home-banner form input[type="email"] {
     width: 75%;
     padding:15px 20px;
     border:none;
@@ -255,7 +332,8 @@ span{
     font-size: 20px;
 }
 
-.subs-content form input[type="submit"]{
+.subs-content form input[type="submit"],
+.home-banner form input[type="submit"] {
     width: 25%;
     border:none;
     border-radius: 10px;
@@ -443,7 +521,7 @@ display: block; /* Show content when accordion is active */
     flex: 1;
 }
 
-::placeholder{
+::placeholder, .discover-card p, .content.our-story h3 {
     color:#000;
 }
 
@@ -537,9 +615,6 @@ display: block; /* Show content when accordion is active */
     border-radius: 5px;
 }
 
-.content.our-story h3 {
-    color: #000;
-}
 
 .team-sec{
     display: flex;
@@ -577,6 +652,7 @@ display: block; /* Show content when accordion is active */
 .team-images {
     display: flex;
     gap: 20px;
+    width: 100%;
 }
 
 .team-images .card-image img {
@@ -592,7 +668,7 @@ display: block; /* Show content when accordion is active */
     display: flex;
     justify-content: flex-end;
 }
-.card-text h3, p {
+.card-text h3, p, .home-banner-footer-section h3 {
     color: #fff;
 }
 
@@ -668,4 +744,39 @@ section.join {
     font-size: 25px;
     color: #000;
     text-align: center;
+}
+
+.howDoes-context {
+    background: #000000db;
+    border-radius: 25px;
+    gap: 0;
+}
+
+.howDoes-column {
+    padding: 50px;
+}
+
+.howDoes-column h3, .howDoes-column p {
+    color: #fff;
+}
+
+.DOes.content p:before {
+    content: '\2713';
+    background: #FF6700;
+    padding: 5px 10px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.DOes.content p {
+    background: #fff;
+    color: #000;
+    font-size: 15px;
+    padding: 20px 10px;
+    border-radius: 10px;
+}
+
+.fa-chevron-right:before {
+    content: '\002B' !important;
+    color: #FF6700;
 }

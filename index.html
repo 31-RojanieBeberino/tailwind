@@ -4,58 +4,278 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Tailwind</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Homepage</title>
 </head>
 <body>
 
-
-
-    <navbar class="section-navbar">
-        <nav class="main-navbar">
-            <div class="navbar-brand">
-                <img src="images/logoMain.webp">
-            </div>
-            <div class="nav-menu">
-                <button class="nav-toggle">
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                </button>
-                <ul class="nav-list">
-                    <li><a href="#">Browse Homes</a></li>
-                    <li><a href="#">How it works</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Membership</a></li>
-                    <li><a href="#">FAQs</a></li>
-                    <li><a href="#">Contact </a></li>
-                </ul>
-            </div>
-            <div class="nav-buttons">
-                <a href="#" class="nav-create-btn">Create your Listing</a>
-                <a href="#" class="nav-sign-in">Sign in</a>
-            </div>
-        </nav>
-    </navbar>
-
-
-
-    <section class="section-home-banner public-section" style="background-image: url(images/image5.webp);">
-        <div class="inner-section-home-banner inner-main-sec">
-            <div class="banner-content">
+    <section class="homepage section-how-it-works public-section" style="background-image: url(images/home-banner.webp);">
+        <div class="inner-section-hiw inner-main-sec">
+            <div class="home-banner hiw-content">
                 <h2>Travel The World, <span>Feel At Home</span></h2>
                 <p>Find Your Home away from Home</p>
                 <form>
-                    <input type="text" name="places" placeholder="Where are you going?">
-                    <div>
-                        <img >
-                        <input type="button" value="">
-                    </div>
+                    <input type="email" placeholder="Where are you going?" name="email" >
+                    <input type="submit" value="SEARCH NOW" name="submit" >
                 </form>
             </div>
         </div>
     </section>
 
 
+    <section class="home-banner-footer-section footer-section" style="background: #FF6700;">
+        <div class="inner-section-hiw inner-main-sec home-banner-sec">
+           <h3>Get Membership now and enjoy unlimited exchanges. Learn more about the annual membership</h3>
+           <h3>Learn More</h3>
+        </div>
+    </section>
+
+
+    <section class="section-team public-section">
+        <div class="inner-section-step step-2 team-sec">
+            <div class="content our-story team">
+                <h3>Feature In</h3>
+            </div>
+                <div class="team-images homepage">
+                 <img src="images/FI1.webp" alt="">
+                 <img src="images/FI2.webp" alt="">
+                 <img src="images/FI3.webp" alt="">
+                 <img src="images/FI5.webp" alt="">
+                </div>
+        </div>
+    </section>
+
+
+    <section class="section-commitment public-section">
+        <div class="inner-section-step step-3 inner-main-sec">
+            <div class="cont-image">
+                <img src="images/homepage-image1.webp">
+            </div>
+            <div class="content our-story">
+                <h3><span>Elevate</span> Your Travel Experiences</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In culpa provident voluptatibus, esse laudantium quos labore, impedit magni ipsa hic delectus cupiditate totam beatae iure nostrum officia dolorem sed accusamus.</p>
+               <a href="#" class="follow-btn">LEARN MORE</a>
+            </div>
+        </div>
+    </section>
+
+   <section class="discover public-section">
+        <div class="discover-div disc-section">
+            <div class="dis content">
+                <div class="context">
+                <h3>Discover <span>Our Homes</span></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt u</p>
+                </div>
+                <div class="discover-btn">
+                    <a href="#" class="follow-btn">DISCOVER MORE</a>
+                </div>
+            </div>
+            <div class="discover-flex">
+                <div class="discover-card">
+                    <img src="images/17.webp" alt="">
+                    <div class="card-div">
+                        <div class="card-context1">
+                        <h2>Paris, France</h2>
+                        <p>1 Bed · 2 Workspaces · 228 Mbps Wifi</p>
+                        </div>
+                        <div class="card-context2">
+                            <span>158 GP/Night</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="discover-card">
+                    <img src="images/18.webp" alt="">
+                    <div class="card-div">
+                        <div class="card-context1">
+                        <h2>Olivella, Spain</h2>
+                        <p>1 Bed · 2 Workspaces · 228 Mbps Wifi</p>
+                        </div>
+                        <div class="card-context2">
+                            <span>158 GP/Night</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="discover-card">
+                    <img src="images/19.webp" alt="">
+                    <div class="card-div">
+                        <div class="card-context1">
+                        <h2>Pontebba, Italy</h2>
+                        <p>1 Bed · 2 Workspaces · 228 Mbps Wifi</p>
+                        </div>
+                        <div class="card-context2">
+                            <span>158 GP/Night</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </section>
+
+    <section class="section-follow-sec public-section">
+        <div class="inner-section-follow inner-main-sec" style="background-image: url(images/image22.webp);">
+            <div class="follow-content">
+                <h4>By following these steps, you'll be well on your way to listing your home and arranging exciting home exchanges with other Tailwind Trades members. Happy traveling!</h4>
+                <a href="#" class="follow-btn">Become a Member</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-team public-section">
+        <div class="inner-section-step step-2 team-sec">
+            <div class="content our-story team">
+                <h3>Explore <span>Destinations</span></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+            </div>
+            <div class="team-images">
+                <div class="exp-card">
+                    <img src="images/san-francisco.webp" alt="">
+                    <h3>San Francisco</h3>
+                </div>
+                <div class="exp-card">
+                    <img src="images/san-diego.webp" alt="">
+                    <h3>San Diego</h3>
+                </div>
+                <div class="exp-card">
+                    <img src="images/lake-tahoe.webp" alt="">
+                    <h3>Lake Tahoe</h3>
+                </div>
+                <div class="exp-card">
+                    <img src="images/hawaii.webp" alt="">
+                    <h3>Hawaii</h3>
+                </div>
+            </div>
+            <a href="#" class="follow-btn">ALL DESTINATION</a>
+        </div>
+    </section>
+
+
+    <section class="howDoes public-section">
+        <div class="howDoes-context inner-main-sec">
+           <img src="images/pexels-max-vakhtbovycn-7061663.webp" alt="">
+           <div class="howDoes-column content">
+            <h3>How Does It <span>Works?</span></h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt uLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt u</p>
+            <div class="DOes content">
+                <p>Step 1: Create Your Listing</p>
+                <p>Step 2: Search Home listings and Send Exchange Requests</p>
+                <p>Step 3: Become a Member </p>
+            </div>
+            <a href="#" class="follow-btn">CREATE LISTING TODAY</a>
+           </div>
+        </div>
+    </section>
+
+    <section class="section-faqs-membership public-section" style="background-image: url(images/image6.webp);">
+        <div class="inner-section-faqs inner-main-sec">
+            <div class="faqs-banner">
+                <h2>Frequently Asked <span>Questions.</span></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                <div class="accordion">
+                    <div class="accordion-item">
+                      <div class="accordion-header">
+                        How much does the membership cost?
+                        <i class="fas fa-chevron-right icon"></i> <!-- Font Awesome icon -->
+                      </div>
+                      <div class="accordion-content">
+                        <p>Content for section 1</p>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <div class="accordion-header">
+                        What are the advantages of the membership?
+                        <i class="fas fa-chevron-right icon"></i> <!-- Font Awesome icon -->
+                      </div>
+                      <div class="accordion-content">
+                        <p>Content for section 2</p>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <div class="accordion-header">
+                        Do I need to take the membership to finalize exchanges?
+                        <i class="fas fa-chevron-right icon"></i> <!-- Font Awesome icon -->
+                      </div>
+                      <div class="accordion-content">
+                        <p>Content for section 3</p>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            How can I subscribe to the membership?
+                            <i class="fas fa-chevron-right icon"></i> <!-- Font Awesome icon -->
+                        </div>
+                        <div class="accordion-content">
+                            <p>Content for section 3</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            Is the one year membership the only option?
+                            <i class="fas fa-chevron-right icon"></i> <!-- Font Awesome icon -->
+                        </div>
+                        <div class="accordion-content">
+                            <p>Content for section 3</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faQs-btn">
+                    <a href="#" class="follow-btn membership">READ ALL FAQs</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-mission public-section" style="background: #EDEDED;">
+        <div class="inner-section-step step-2 inner-main-sec">
+            <div class="content our-story">
+                <h3><span>More Than A </span>Home Exchange</h3>
+                <p>At Tailwind Trades, our mission is simple yet profound: to connect the world's airline pilots, enabling them to live and explore diverse destinations not just as visitors, but as locals. We aim to build a community based on trust, shared interests, and the love of aviation and travel. By facilitating home swaps among pilots, we provide an opportunity for cultural exchange, personal growth, and the chance to experience life in different corners of the globe.</p>
+                <a href="#" class="follow-btn">CREATE YOUR LISTING</a>
+            </div>
+            <div class="cont-image">
+                <img src="images/pexels-pixabay-262405.webp">
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="section-subs public-section" style="background-image: url(images/image.webp);">
+        <div class="inner-section-subs inner-main-sec">
+            <div class="subs-content">
+                <h2><span>Subscribe</span> To Our Mailing List</h2>
+                <p>Sign up for email updates with travel recommendations and Private Deals.</p>
+                <form>
+                    <input type="email" placeholder="Email address" name="email" >
+                    <input type="submit" value="SUBSCIBE" name="submit" >
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script>
+        // JavaScript Logic
+        document.addEventListener('DOMContentLoaded', function() {
+          const accordionItems = document.querySelectorAll('.accordion-item');
+      
+          accordionItems.forEach(item => {
+            const header = item.querySelector('.accordion-header');
+      
+            header.addEventListener('click', () => {
+              const isActive = item.classList.contains('active');
+      
+              accordionItems.forEach(item => {
+                item.classList.remove('active');
+              });
+      
+              if (!isActive) {
+                item.classList.add('active');
+              }
+            });
+          });
+        });
+      </script>
 
 </body>
 </html>
