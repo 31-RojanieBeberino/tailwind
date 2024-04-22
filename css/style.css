@@ -45,6 +45,247 @@ h1, h2, h3, h4, h5, p, a, div, input, select, textarea {
 }
 
 
+.home-menu a {
+    color:#fff!important;
+}
+
+
+.inner-pages-navbar{
+    position: fixed!important;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px #00000050;
+
+}
+
+
+.inner-menu li a {
+    color:#000!important;
+}
+
+.inner-menu .nav-sign-in {
+    color:#000!important;
+}
+
+.inner-menu .nav-create-btn{
+    color:#fff;
+}
+
+.nav-toggle{
+    width:50px;
+    height: 50px;
+    display: none;
+    flex-direction: column;
+    gap:10px;
+    background-color: transparent;
+    justify-content: center;
+    border: 0px;
+
+}
+
+.nav-toggle .bar{
+    height: 5px;
+    width: 100%;
+    background-color: #fff;
+}
+
+
+.section-navbar{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 99;
+}
+
+
+.main-navbar{
+    width:100%;
+    max-width: 1700px;
+    display: flex;
+    gap:20px;
+}
+
+
+.navbar-brand{
+    width:15%;
+}
+
+.nav-menu{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+    gap:20px;
+}
+
+.nav-list li a {
+    padding:15px 20px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.nav-buttons{
+    width: 25%;
+    display: flex;
+    gap:10px;
+    align-items: center;
+}
+
+.nav-create-btn{
+    width:70%;
+    background-color: #FF6700;
+    color:#fff;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding:15px 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.nav-sign-in{
+    width:30%;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+
+.section-footer{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-footer-content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.top-footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:50px 0px;
+}
+
+.top-footer-content{
+    max-width: 1300px;
+    gap:20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.top-footer-content h3{
+    font-size: 25px;
+}
+
+.bottom-footer{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+    background-color: #FF6700;
+}
+
+.bot-footer-content{
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.footer-brand{
+    width:45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap:20px;
+    padding-right: 50px;
+}
+
+.footer-brand img{
+    width:200px;
+}
+
+.footer-brand p{
+    color:#000;
+}
+
+.footer-list-menu, .footer-follow-us{
+    width:20%;
+}
+
+.footer-list-menu{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+
+}
+
+.footer-list-menu a{
+    font-size: 17px;
+    color:#000;
+    text-decoration: none;
+}
+
+.footer-follow-us{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.follow-icons{
+    display: flex;
+    gap:5px;
+}
+
+.follow-icons img{
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+.footer-get-started{
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+
+.footer-get-started a {
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    color:#fff;
+}
+
+.footer-get-started .bam{
+    background-color: #FF6700;
+}
+
+.footer-get-started .cyl{
+    background-color: #292929;
+}
+
+
 
 .public-section{
     background-position: center center;
@@ -67,7 +308,8 @@ h1, h2, h3, h4, h5, p, a, div, input, select, textarea {
 }
 
 .section-how-it-works{
-    height: 500px;
+    padding:150px 20px 50px;
+    height: 550px;
     position: relative;
 }
 
@@ -346,7 +588,8 @@ span{
 
 
 .section-faqs{
-    height: 500px;
+    height: 550px;
+    padding: 150px 20px 50px;
 }
 
 .faqs-banner{
