@@ -4,37 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <title>Membership</title>
 </head>
 <body>
 
-  <navbar class="section-navbar inner-pages-navbar">
-    <nav class="main-navbar">
-        <div class="navbar-brand">
-            <img src="images/logoMain.webp">
-        </div>
-        <div class="nav-menu">
-            <button class="nav-toggle">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </button>
-            <ul class="nav-list inner-menu">
-                <li><a href="#">Browse Homes</a></li>
-                <li><a href="#">How it works</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Membership</a></li>
-                <li><a href="#">FAQs</a></li>
-                <li><a href="#">Contact </a></li>
-            </ul>
-        </div>
-        <div class="nav-buttons inner-menu">
-            <a href="#" class="nav-create-btn">Create your Listing</a>
-            <a href="#" class="nav-sign-in">Sign in</a>
-        </div>
-    </nav>
-</navbar>
+    <navbar class="section-navbar inner-pages-navbar">
+        <nav class="main-navbar">
+            <div class="navbar-brand">
+                <img src="images/logoMain.webp">
+            </div>
+            <div class="nav-menu">
+                <button class="nav-toggle inner-page-bar">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </button>
+                <ul class="nav-list inner-menu">
+                    <img class="close" src="images/closeImg.png">
+                    <li><a href="#">Browse Homes</a></li>
+                    <li><a href="#">How it works</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Membership</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Contact </a></li>
+
+                    <div class="nav-buttons mobile inner-menu">
+                        <a href="#" class="nav-create-btn">Create your Listing</a>
+                        <a href="#" class="nav-sign-in">Sign in</a>
+                    </div>
+                </ul>
+            </div>
+            <div class="nav-buttons destop inner-menu">
+                <a href="#" class="nav-create-btn">Create your Listing</a>
+                <a href="#" class="nav-sign-in">Sign in</a>
+            </div>
+        </nav>
+    </navbar>
 
     <section class="section-how-it-works public-section" style="background-image: url(images/membership-banner.webp);">
         <div class="inner-section-hiw inner-main-sec">
@@ -107,7 +114,7 @@
 
 
     <section class="hdw public-section" style="background: #EDEDED;">
-        <div class="hdw content inner-section-step inner-main-sec team-sec">
+        <div class="hdw content inner-main-sec team-sec">
             <h2>How Does <span>It Works?</span></h2>
             <p>Join us for only <span>220 dollars</span> per year!</p>
             <div class="hdw-row">
@@ -253,28 +260,8 @@
   </footer>
 
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/js.js"></script>
 
-    <script>
-        // JavaScript Logic
-        document.addEventListener('DOMContentLoaded', function() {
-          const accordionItems = document.querySelectorAll('.accordion-item');
-      
-          accordionItems.forEach(item => {
-            const header = item.querySelector('.accordion-header');
-      
-            header.addEventListener('click', () => {
-              const isActive = item.classList.contains('active');
-      
-              accordionItems.forEach(item => {
-                item.classList.remove('active');
-              });
-      
-              if (!isActive) {
-                item.classList.add('active');
-              }
-            });
-          });
-        });
-      </script>
 </body>
 </html>

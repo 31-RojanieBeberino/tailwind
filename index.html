@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <title>Homepage</title>
 </head>
@@ -21,15 +22,21 @@
                     <div class="bar"></div>
                 </button>
                 <ul class="nav-list home-menu">
+                    <img class="close" src="images/closeImg.png">
                     <li><a href="#">Browse Homes</a></li>
                     <li><a href="#">How it works</a></li>
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Membership</a></li>
                     <li><a href="#">FAQs</a></li>
                     <li><a href="#">Contact </a></li>
+                    
+                    <div class="nav-buttons mobile home-menu">
+                        <a href="#" class="nav-create-btn">Create your Listing</a>
+                        <a href="#" class="nav-sign-in">Sign in</a>
+                    </div>
                 </ul>
             </div>
-            <div class="nav-buttons home-menu">
+            <div class="nav-buttons destop home-menu">
                 <a href="#" class="nav-create-btn">Create your Listing</a>
                 <a href="#" class="nav-sign-in">Sign in</a>
             </div>
@@ -53,7 +60,7 @@
     <section class="home-banner-footer-section footer-section" style="background: #FF6700;">
         <div class="inner-section-hiw inner-main-sec home-banner-sec">
            <h3>Get Membership now and enjoy unlimited exchanges. Learn more about the annual membership</h3>
-           <h3>Learn More</h3>
+           <a href="#">Learn More</a>
         </div>
     </section>
 
@@ -63,7 +70,7 @@
             <div class="content our-story team">
                 <h3>Feature In</h3>
             </div>
-            <div class="team-images homepage">
+            <div class="feature-img">
                 <img src="images/FI1.webp" alt="">
                 <img src="images/FI2.webp" alt="">
                 <img src="images/FI3.webp" alt="">
@@ -389,6 +396,9 @@
 
 
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/js.js"></script>
+    </script>
     <script>
         // JavaScript Logic
         document.addEventListener('DOMContentLoaded', function() {

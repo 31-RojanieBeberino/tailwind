@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css">
     <title>Browse Page</title>
 </head>
 <body>
@@ -15,21 +17,27 @@
                 <img src="images/logoMain.webp">
             </div>
             <div class="nav-menu">
-                <button class="nav-toggle">
+                <button class="nav-toggle inner-page-bar">
                     <div class="bar"></div>
                     <div class="bar"></div>
                     <div class="bar"></div>
                 </button>
                 <ul class="nav-list inner-menu">
+                    <img class="close" src="images/closeImg.png">
                     <li><a href="#">Browse Homes</a></li>
                     <li><a href="#">How it works</a></li>
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Membership</a></li>
                     <li><a href="#">FAQs</a></li>
                     <li><a href="#">Contact </a></li>
+
+                    <div class="nav-buttons mobile inner-menu">
+                        <a href="#" class="nav-create-btn">Create your Listing</a>
+                        <a href="#" class="nav-sign-in">Sign in</a>
+                    </div>
                 </ul>
             </div>
-            <div class="nav-buttons inner-menu">
+            <div class="nav-buttons destop inner-menu">
                 <a href="#" class="nav-create-btn">Create your Listing</a>
                 <a href="#" class="nav-sign-in">Sign in</a>
             </div>
@@ -52,7 +60,7 @@
                     </div>
                     <div class="input When">
                         <h4>When</h4>
-                        <input type="date" name="date">
+                        <input type="text" id="daterange-main" />
                     </div>
                     <div class="input Who">
                         <h4>Who</h4>
@@ -438,6 +446,15 @@
         </div>
     </div>
 </footer>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/js.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
 
 </body>
 </html>
