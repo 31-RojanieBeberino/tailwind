@@ -3,6 +3,15 @@ $(document).ready(function(){
         $('.nav-list').addClass('openNav-menu');
     })
 
+
+    $('.nav-create-btn').click(function(){
+      $('.nav-list').removeClass('openNav-menu');
+  })
+
+  $('.nav-sign-in').click(function(){
+    $('.nav-list').removeClass('openNav-menu');
+})
+
     $('.close').click(function(){
         $('.nav-list').removeClass('openNav-menu');
     })
@@ -17,6 +26,46 @@ $(document).ready(function(){
         // Initialize the date range picker
         $('#daterange-main').daterangepicker();
       });
+
+
+
+  $('.nav-sign-in').click(function(){
+    $('.sign-in-sec').addClass('show-sign-in-card');
+    $('body').css('overflow', 'hidden');
+  })
+
+  $('.close-card').click(function(){
+    $('.sign-in-sec').removeClass('show-sign-in-card');
+    $('body').css('overflow', 'auto');
+  })
+
+  $('.nav-create-btn').click(function(){
+    $('.sign-up-sec').addClass('show-sign-up-card');
+    $('body').css('overflow', 'hidden');
+  })
+
+  $('.close-card').click(function(){
+    $('.sign-up-sec').removeClass('show-sign-up-card');
+    $('body').css('overflow', 'auto');
+  })
+
+
+  $('.pop-btn-signup').click(function(){
+    $('.sign-up-sec').addClass('show-sign-up-card');
+    $('.sign-in-sec').removeClass('show-sign-in-card');
+    $('body').css('overflow', 'hidden');
+  })
+
+  $('.pop-btn-signin').click(function(){
+    $('.sign-in-sec').addClass('show-sign-in-card');
+    $('.sign-up-sec').removeClass('show-sign-up-card');
+    $('body').css('overflow', 'hidden');
+  })
+
+
+
+
+
 
 });
 
