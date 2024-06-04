@@ -2244,14 +2244,12 @@ input[name="full-name-sign-up"] {
     max-width: 1330px;
     width: 100%;
 }
-.inputBtn input[type="text"] {
+.inputBtn input[type="button"] {
     background: #FF6700;
-    padding: 20px 15px;
+    padding: 20px 40px;
     display: flex;
     border: none;
     text-align: center;
     font-size: 20px;
-}
-.inputBtn input[type="text"]::placeholder {
     color: #fff;
 }
