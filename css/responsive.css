@@ -1,3 +1,9 @@
+@media (max-width: 1340px) {
+    .black-line {
+        width: 95%;
+    }
+}
+
 @media screen and (max-width:1024px){
     .inner-main-sec{
         flex-direction: column;
@@ -586,5 +592,24 @@
 
     .popup-form-card h3{
         font-size: 25px;
+    }
+}
+@media (max-width: 445px) {
+    .add-homeSec2 img {
+        height: 350px;
+    }
+    .inputBtn {
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (max-width: 325px) {
+    .add-home-tab h3 {
+        font-size: 13px;
+    }
+}
+@media (max-width: 385px) {
+    .add-homeSec2 img {
+        height: 300px;
     }
 }

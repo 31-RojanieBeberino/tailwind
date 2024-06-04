@@ -2134,3 +2134,124 @@ input[name="full-name-sign-up"] {
     line-height: 1.2em;
 }
 
+/* Ralph CSS */
+.add-home-tab .main-navbar {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-navbar.add-home-tab {
+    position: static;
+}
+.inner-pages-navbar.add-home-tab {
+    position: static !important;
+}
+#add-home-tab {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+#add-home-tab .inner-main-sec {
+    padding: 50px 20px;
+    max-width: 1330px;
+}
+.add-homeSec1 h1 {
+    font-size: 49px;
+}
+.add-homeSec1 p {
+    color: #000;
+}
+.add-homeSec2 img {
+    width: auto;
+    height: 400px;
+}
+#add-home-tab #form1 .fomr1Sec1,
+#add-home-tab #form2 .fomr1Sec1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 150px;
+    background: #FF6700;
+    padding: 20px;
+    border-radius: 15px;
+}
+#add-home-tab #form1 p,
+#add-home-tab #form2 p {
+    color: #fff;
+}
+#add-home-tab #form1 .fomr1Sec2,
+#add-home-tab #form2 .fomr1Sec2 {
+    background: #D1D1D1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 15px;
+}
+#add-home-tab #form1 .fomr1Sec2 p,
+#add-home-tab #form2 .fomr1Sec2 p {
+    color: #000;
+}
+.add-home-tab-optionSec,
+#add-home-tab .radio-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#add-home-tab .form-container #form1,
+#add-home-tab .form-container #form2 {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}
+#add-home-tab .radio-buttons label {
+    font-size: 20px;
+}
+#black-line {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.black-line {
+    max-width: 1330px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.black-line::after {
+    content: "";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-top: 2px solid #000;
+}
+#add-homeSec-footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+}
+.inputBtn {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    max-width: 1330px;
+    width: 100%;
+}
+.inputBtn input[type="text"] {
+    background: #FF6700;
+    padding: 20px 15px;
+    display: flex;
+    border: none;
+    text-align: center;
+    font-size: 20px;
+}
+.inputBtn input[type="text"]::placeholder {
+    color: #fff;
+}

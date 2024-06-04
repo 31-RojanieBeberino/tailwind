@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css">
+    <title>Create Your Listing Main Page - Add Home Tab</title>
+</head>
+<body>
+
+
+    <navbar class="section-navbar inner-pages-navbar add-home-tab">
+        <nav class="main-navbar">
+                <img src="images/logoMain.webp">
+                <h3><b>STEP 1 / 7</b></h3>
+        </nav>
+    </navbar>
+
+    
+    <section id="add-home-tab">
+        <div class="inner-main-sec">
+            <div class="add-homeSec1">
+                <div class="content">
+                <h1>Hello Joe, What's Your Home Like?</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <div class="add-home-tab-optionSec">
+                    <p><b>Home Type</b></p>
+                    <div class="form-container">
+                        <form id="form1">
+                            <div class="fomr1Sec1">
+                                <img src="/images/house.png" alt="">
+                                <p>House</p>
+                            </div>
+                            <div class="fomr1Sec2">
+                                <img src="/images/apartment.png" alt="">
+                                <p>Apartment</p>
+                            </div>  
+                        </form>
+                        
+                        <form id="form2" style="display: none;">
+                            <div class="fomr1Sec2">
+                                <img src="/images/apartment.png" alt="">
+                                <p>Apartment</p>
+                            </div>
+                            <div class="fomr1Sec1">
+                                <img src="/images/house.png" alt="">
+                                <p>House</p>
+                            </div>  
+                        </form>
+                       
+                    </div>
+                    <div class="radio-buttons">
+                        <label>
+                            <input type="radio" name="form-toggle" value="form1" checked>
+                            The Entire Home
+                        </label>
+                        <label>
+                            <input type="radio" name="form-toggle" value="form2">
+                            Private Room
+                        </label>
+                    </div>
+                
+                </div>
+                </div>
+            </div>
+            <div class="add-homeSec2">
+                <img src="/images/Smart home-amico.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section id="black-line">
+        <div class="black-line"></div>
+    </section>
+
+    <footer id="add-homeSec-footer">
+        <div class="inputBtn">
+            <input type="text" placeholder="Next" name="" id="">
+        </div>
+    </footer>
+    
+    <script>
+document.addEventListener('DOMContentLoaded', () => {
+    const radioButtons = document.querySelectorAll('input[name="form-toggle"]');
+    const form1 = document.getElementById('form1');
+    const form2 = document.getElementById('form2');
+
+    radioButtons.forEach(radio => {
+        radio.addEventListener('change', () => {
+            if (radio.value === 'form1') {
+                form1.style.display = 'flex';
+                form2.style.display = 'none';
+            } else if (radio.value === 'form2') {
+                form1.style.display = 'none';
+                form2.style.display = 'flex';
+            }
+        });
+    });
+});
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/js.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+
+</body>
+</html>
