@@ -70,6 +70,25 @@ $(document).ready(function(){
 });
 
 
+document.addEventListener('DOMContentLoaded', () => {
+  const radioButtons = document.querySelectorAll('input[name="form-toggle"]');
+  const form1 = document.getElementById('form1');
+  const form2 = document.getElementById('form2');
+
+  radioButtons.forEach(radio => {
+      radio.addEventListener('change', () => {
+          if (radio.value === 'form1') {
+              form1.style.display = 'flex';
+              form2.style.display = 'none';
+          } else if (radio.value === 'form2') {
+              form1.style.display = 'none';
+              form2.style.display = 'flex';
+          }
+      });
+  });
+});
+
+
 
 let slideIndex = 0;
     const slides = document.querySelectorAll('.carousel li');
