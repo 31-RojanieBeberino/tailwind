@@ -2318,3 +2318,6 @@ div#counter, div#counter2 {
 .counter1:nth-child(2) {
     gap: 22px;
 }
+/* .step5 .counter1:nth-child(2) {
+    gap: 18px;
+} */
