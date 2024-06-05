@@ -2169,13 +2169,14 @@ input[name="full-name-sign-up"] {
 }
 #add-home-tab #form1 .fomr1Sec1,
 #add-home-tab #form2 .fomr1Sec1 {
+    --orange: #FF6700;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
     width: 150px;
-    background: #FF6700;
+    background: var(--orange);
     padding: 20px;
     border-radius: 15px;
 }
@@ -2185,7 +2186,8 @@ input[name="full-name-sign-up"] {
 }
 #add-home-tab #form1 .fomr1Sec2,
 #add-home-tab #form2 .fomr1Sec2 {
-    background: #D1D1D1;
+    --silver: #D1D1D1;
+    background: var(--silver);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -2251,7 +2253,8 @@ input[name="full-name-sign-up"] {
     cursor: pointer;
 }
 .inputBtn input[type="button"] {
-    background: #FF6700;
+    --orange: #FF6700;
+    background: var(--orange);
     padding: 20px 40px;
     display: flex;
     border: none;
@@ -2273,4 +2276,45 @@ input[name="full-name-sign-up"] {
 #step2 .inputBtnStep3 input[type="button"]:nth-child(1) {
     background: #5D5D5D;
     color: #fff;
+}
+.accordion.step4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.step4 .accordion-item:nth-child(1) {
+    width: 65%;
+}
+.step4 .accordion-item:nth-child(2) {
+    width: 30%;
+}
+.counter1 {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.counter1 i {
+    border: 1px solid #FF6700;
+    padding: 5px;
+    /* color: #FF6700; */
+    border-radius: 50%;
+    --g: #FF6700;
+    color: var(--g);
+    cursor: pointer;
+}
+.counter1 img {
+    height: 30px;
+    /* aspect-ratio: 1; */
+}
+div#counter, div#counter2 {
+    font-size: 20px;
+}
+.counterSec {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.counter1:nth-child(2) {
+    gap: 22px;
 }

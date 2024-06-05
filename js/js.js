@@ -1,3 +1,26 @@
+// js for Create-Your-Listing-Main-Page-Add-Home-Tab-Step-4.html
+let count = 0;
+                
+function incrementCounter() {
+    count++;
+    document.getElementById('counter').innerText = count;
+}
+function DeCounter() {
+    count--;
+    document.getElementById('counter').innerText = count;
+}
+let count2 = 0;
+                
+function incrementCounter2() {
+    count2++;
+    document.getElementById('counter2').innerText = count2;
+}
+function DeCounter2() {
+    count2--;
+    document.getElementById('counter2').innerText = count2;
+}
+//! js for Create-Your-Listing-Main-Page-Add-Home-Tab-Step-4.html
+
 // js for Create-Your-Listing-Main-Page-Add-Home-Tab.html
 document.addEventListener('DOMContentLoaded', () => {
   const radioButtons = document.querySelectorAll('input[name="form-toggle"]');
