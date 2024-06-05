@@ -1,3 +1,100 @@
+// js for Create-Your-Listing-Main-Page-Add-Home-Tab.html
+document.addEventListener('DOMContentLoaded', () => {
+  const radioButtons = document.querySelectorAll('input[name="form-toggle"]');
+  const form1 = document.getElementById('form1');
+  const form2 = document.getElementById('form2');
+
+  radioButtons.forEach(radio => {
+      radio.addEventListener('change', () => {
+          if (radio.value === 'form1') {
+              form1.style.display = 'flex';
+              form2.style.display = 'none';
+          } else if (radio.value === 'form2') {
+              form1.style.display = 'none';
+              form2.style.display = 'flex';
+          }
+      });
+  });
+});
+//! js for Create-Your-Listing-Main-Page-Add-Home-Tab.html
+
+// js for Create-Your-Listing-Main-Page-Add-Home-Tab-Step-2.html
+  document.addEventListener('DOMContentLoaded', () => {
+    const radioButtons = document.querySelectorAll('input[name="form-toggle"]');
+    const form1 = document.getElementById('step2form1');
+    const form2 = document.getElementById('step2form2');
+    const form3 = document.getElementById('step2form3');
+    const form4 = document.getElementById('step2form4');
+    const form5 = document.getElementById('step2form5');
+    const form6 = document.getElementById('step2form6');
+    const form7 = document.getElementById('step2form7');
+  
+    radioButtons.forEach(radio => {
+        radio.addEventListener('change', () => {
+            if (radio.value === 'step2form1') {
+                form1.style.display = 'flex';
+                form2.style.display = 'none';
+                form3.style.display = 'none';
+                form4.style.display = 'none';
+                form5.style.display = 'none';
+                form6.style.display = 'none';
+                form7.style.display = 'none';
+            } else if (radio.value === 'step2form2') {
+                form1.style.display = 'none';
+                form2.style.display = 'flex';
+                form3.style.display = 'none';
+                form4.style.display = 'none';
+                form5.style.display = 'none';
+                form6.style.display = 'none';
+                form7.style.display = 'none';
+            } else if (radio.value === 'step2form3') {
+                form1.style.display = 'none';
+                form2.style.display = 'none';
+                form3.style.display = 'flex';
+                form4.style.display = 'none';
+                form5.style.display = 'none';
+                form6.style.display = 'none';
+                form7.style.display = 'none';
+            } else if (radio.value === 'step2form4') {
+                form1.style.display = 'none';
+                form2.style.display = 'none';
+                form3.style.display = 'none';
+                form4.style.display = 'flex';
+                form5.style.display = 'none';
+                form6.style.display = 'none';
+                form7.style.display = 'none';
+            } else if (radio.value === 'step2form5') {
+                form1.style.display = 'none';
+                form2.style.display = 'none';
+                form3.style.display = 'none';
+                form4.style.display = 'none';
+                form5.style.display = 'flex';
+                form6.style.display = 'none';
+                form7.style.display = 'none';
+            } else if (radio.value === 'step2form6') {
+                form1.style.display = 'none';
+                form2.style.display = 'none';
+                form3.style.display = 'none';
+                form4.style.display = 'none';
+                form5.style.display = 'none';
+                form6.style.display = 'flex';
+                form7.style.display = 'none';
+            } else if (radio.value === 'step2form7') {
+                form1.style.display = 'none';
+                form2.style.display = 'none';
+                form3.style.display = 'none';
+                form4.style.display = 'none';
+                form5.style.display = 'none';
+                form6.style.display = 'none';
+                form7.style.display = 'flex';
+            } 
+        });
+    });
+  });
+//! js for Create-Your-Listing-Main-Page-Add-Home-Tab-Step-2.html
+
+
+
 $(document).ready(function(){
     $('.nav-toggle').click(function(){
         $('.nav-list').addClass('openNav-menu');
@@ -61,12 +158,6 @@ $(document).ready(function(){
     $('.sign-up-sec').removeClass('show-sign-up-card');
     $('body').css('overflow', 'hidden');
   })
-
-
-
-
-
-
 });
 
 
