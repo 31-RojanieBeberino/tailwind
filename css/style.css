@@ -2307,7 +2307,9 @@ input[name="full-name-sign-up"] {
     height: 30px;
     /* aspect-ratio: 1; */
 }
-div#counter, div#counter2 {
+div#counter, div#counter2, div#counter3,
+div#counter4, div#counter5, div#counter6,
+div#counter7 {
     font-size: 20px;
 }
 .counterSec {
