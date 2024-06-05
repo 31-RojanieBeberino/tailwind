@@ -2237,7 +2237,7 @@ input[name="full-name-sign-up"] {
     width: 100%;
     display: flex;
     justify-content: center;
-    padding: 50px 20px;
+    padding: 20px;
 }
 .inputBtn {
     display: flex;
@@ -2245,6 +2245,9 @@ input[name="full-name-sign-up"] {
     align-items: flex-end;
     max-width: 1330px;
     width: 100%;
+}
+.inputBtn input[type="button"] {
+    cursor: pointer;
 }
 .inputBtn input[type="button"] {
     background: #FF6700;

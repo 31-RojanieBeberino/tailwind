@@ -595,12 +595,32 @@
     }
 }
 @media (max-width: 445px) {
+    .add-homeSec1 h1 {
+        font-size: 40px;
+    }
     .add-homeSec2 img {
         height: 350px;
     }
     .inputBtn {
         justify-content: center;
         align-items: center;
+    }
+    .step3 {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .inputBtnStep3 {
+        flex-direction: column;
+        width: 100%;
+    }
+    input[type="button"] {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    #step2.inputBtn {
+        flex-wrap: wrap;
+        gap: 20px;
     }
 }
 @media (max-width: 325px) {
