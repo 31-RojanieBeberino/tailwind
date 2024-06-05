@@ -639,6 +639,21 @@
     .step4 .accordion-item:nth-child(2) {
         width: 100%;
     }
+    .counter1 {
+        gap: 10px;
+    }
+    .counter1:nth-child(2) {
+        gap: 11px;
+    }
+    .counTer {
+        gap: 10px;
+    }
+    .step5 .counter1 p {
+        font-size: 18px;
+    }
+    .counter1 img {
+        height: 20px;
+    }
 }
 @media (max-width: 385px) {
     .add-homeSec2 img {
@@ -648,6 +663,13 @@
 @media (max-width: 375px) {
     .add-homeSec2.step4 img {
         height: 200px;
+    }
+    .counter1 p,
+    div#counter, div#counter2, div#counter3, div#counter4, div#counter5, div#counter6, div#counter7 {
+        font-size: 15px;
+    }
+    .counter1 i {
+        padding: 3px;
     }
 }
 @media (max-width: 325px) {
