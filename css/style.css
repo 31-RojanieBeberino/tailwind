@@ -2253,3 +2253,10 @@ input[name="full-name-sign-up"] {
     font-size: 20px;
     color: #fff;
 }
+#step2.inputBtn {
+    justify-content: space-between;
+}
+#step2.inputBtn input[type="button"]:nth-child(1) {
+    background: #CCCCCC;
+    color: #000;
+}
