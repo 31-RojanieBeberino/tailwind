@@ -2396,6 +2396,10 @@ div#counter7 {
     background: #F6F6F6;
     border: 0;
 }
+.exchanges-page .inner-main-sec {
+    justify-content: center;
+    align-items: center;
+}
 .exchanges-page .content {
     align-items: center;
 }
