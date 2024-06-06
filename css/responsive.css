@@ -314,6 +314,14 @@
     #basicSec {
         width: 100%;
     }
+    #my-membership {
+        width: 90%;
+    }
+}
+@media (max-width: 768px) {
+    #add-home-tab .inner-main-sec {
+        padding: 50px 20px;
+    }
 }
 
 @media (max-width: 580px) {
@@ -626,6 +634,18 @@
     .userProfile {
         gap: 15px;
     }
+    #my-membership {
+        width: 100%;
+    }
+    #my-membership li {
+        list-style: none;
+        font-size: 16px;
+    }
+    #my-membership li::before {
+        font-size: 7px;
+        padding: 5px;
+    }
+    
     
 }
 @media(max-width: 610px) {
@@ -724,9 +744,15 @@
     img.toggle-profile {
         height: 15px;
     }
+    #my-membership li::before {
+        margin-right: 10px;
+    }
 }
 @media (max-width: 325px) {
     .add-home-tab h3 {
         font-size: 13px;
+    }
+    #my-membership {
+        width: 90%;
     }
 }
