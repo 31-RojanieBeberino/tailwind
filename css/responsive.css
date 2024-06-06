@@ -614,8 +614,17 @@
     .popup-form-card h3{
         font-size: 25px;
     }
+    img.logo {
+        height: 40px;
+    }
     .exchanges-page .add-homeSec2 img {
         height: 350px;
+    }
+    .userDropdown p {
+        display: none;
+    }
+    .userProfile {
+        gap: 15px;
     }
     
 }
@@ -708,6 +717,12 @@
 @media (max-width: 345px) {
     .exchanges-page .add-homeSec2 img {
         height: 200px;
+    }
+    .userLogo img {
+        height: 30px;
+    }
+    img.toggle-profile {
+        height: 15px;
     }
 }
 @media (max-width: 325px) {

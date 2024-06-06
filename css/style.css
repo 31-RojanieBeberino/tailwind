@@ -2137,6 +2137,29 @@ input[name="full-name-sign-up"] {
 }
 
 /* Ralph CSS */
+.userProfile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.userLogo img {
+    height: 50px;
+}
+.userDropdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.userDropdown p {
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+}
+img.toggle-profile {
+    height: 20px;
+}
 .add-home-tab .main-navbar {
     justify-content: space-between;
     align-items: center;
