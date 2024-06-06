@@ -2292,6 +2292,9 @@ input[name="full-name-sign-up"] {
     background: #5D5D5D;
     color: #fff;
 }
+.step7 input[type="button"] {
+    background: #FF6700 !important;
+}
 .accordion.step4 {
     display: flex;
     justify-content: space-between;
@@ -2387,4 +2390,9 @@ div#counter7 {
 .basicTxt p {
     color: #FF6700;
     text-decoration: underline;
+}
+.step7-page7 textarea {
+    resize: none;
+    background: #F6F6F6;
+    border: 0;
 }
