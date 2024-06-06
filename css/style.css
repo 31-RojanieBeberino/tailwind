@@ -2419,6 +2419,9 @@ div#counter7 {
     background: #F6F6F6;
     border: 0;
 }
+.exchanges-page, .my-profile {
+    background: #F6F6F6;
+}
 .exchanges-page .inner-main-sec {
     justify-content: center;
     align-items: center;
@@ -2471,4 +2474,86 @@ div#counter7 {
     background: #FF6700;
     border-radius: 50%;
     padding: 8px;
+}
+
+section#my-profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    gap: 50px;
+}
+section#my-profile h1 {
+    font-size: 50px;
+}
+#my-profile form {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.profileForm {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    background: #F6F6F6;
+    padding: 50px;
+    border-radius: 8px;
+    gap: 20px;
+}
+.profileUpload {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.profileUpload .edit-photo {
+    background: url('/images/upload.png');
+    background-position: left;
+    background-size: 18px;
+    background-repeat: no-repeat;
+    padding-left: 25px;
+    border-radius: 5px;
+}
+.profileUpload input[type="button"] {
+    border: 0;
+    padding: 10px 30px;
+    background: #fff;
+    font-size: 18px;
+}
+div#profile-info {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+div#profile-info label {
+    font-size: 18px;
+    font-weight: 700;
+}
+.info-cols1, .info-cols2 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 45%;
+}
+#profile-info input[type="text"], #profile-info input[type="email"],
+#profile-info input[type="password"], #profile-info input[type="number"],
+#profile-info select {
+    background: #fff;
+    border: 0;
+    height: 50px;
+    border-radius: 8px;
+}
+.info-cols1.textArea {
+    width: 100%;
+}
+.info-cols1.textArea textarea {
+    border: 0;
+    background: #fff;
+}
+#myProfilebtn {
+    justify-content: center;
 }

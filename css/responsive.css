@@ -322,6 +322,9 @@
     #add-home-tab .inner-main-sec {
         padding: 50px 20px;
     }
+    #my-profile form, .info-cols1, .info-cols2 {
+        width: 100%;
+    }
 }
 
 @media (max-width: 580px) {
@@ -714,10 +717,21 @@
         height: 20px;
     }
 }
+@media (max-width: 425px) {
+    .profileUpload {
+        gap: 20px;
+    }
+    .profileForm {
+        padding: 25px;
+    }
+}
 @media (max-width: 385px) {
     .add-homeSec2 img {
         height: 300px;
     }
+    /* .profileUpload {
+        flex-direction: column;
+    } */
 }
 @media (max-width: 375px) {
     .add-homeSec2.step4 img {
