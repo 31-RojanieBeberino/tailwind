@@ -430,7 +430,7 @@ h1, h2, h3, h4, h5, p, a, div, input, select, textarea {
     max-width: 1300px;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     gap:100px;
 }
 
@@ -2342,4 +2342,49 @@ div#counter7 {
 .imgTxt, .counTer {
     display: flex;
     gap: 20px;
+}
+#basicSec {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 30px;
+    position: relative;
+    width: 80%;
+}
+.basicSec {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    
+}
+.basicSec .basicContain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 150px;
+    width: 27%;
+    border: 2px solid #808080;
+    border-radius: 10px;
+    text-align: center;
+}
+.basicSec .basicContain:hover {
+    background: #FF6700;
+    border: 2px solid transparent;
+}
+.basicSec .basicContain img {
+    width: auto;
+    height: 65px;
+    object-fit: contain;
+}
+.basicSec p {
+    font-size: 16px;
+}
+.basicTxt p {
+    color: #FF6700;
+    text-decoration: underline;
 }

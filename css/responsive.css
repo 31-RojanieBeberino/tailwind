@@ -307,11 +307,26 @@
     .desire-item{
         width: 100%!important;
     }
+    #add-home-tab .inner-main-sec {
+        justify-content: center;
+        align-items: center;
+    }
+    #basicSec {
+        width: 100%;
+    }
 }
 
+@media (max-width: 580px) {
+    .basicSec .basicContain {
+        width: 47%;
+    }
+}
 
-
-
+@media (max-width: 539px) {
+    .basicSec .basicContain {
+        width: 100%;
+    }
+}
 
 @media screen and (max-width:500px){
     .destop{
@@ -649,7 +664,7 @@
         gap: 10px;
     }
     .step5 .counter1 p {
-        font-size: 18px;
+        font-size: 14px;
     }
     .counter1 img {
         height: 20px;
