@@ -2396,3 +2396,15 @@ div#counter7 {
     background: #F6F6F6;
     border: 0;
 }
+.exchanges-page .content {
+    align-items: center;
+}
+.exchanges-page h1, .exchanges-page p {
+    text-align: center;
+}
+.exchanges-page input[type="button"] {
+    background: #FF6700;
+    border: 0;
+    padding: 20px 60px;
+    color: #fff;
+}

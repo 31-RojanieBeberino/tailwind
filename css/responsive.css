@@ -320,6 +320,12 @@
     .basicSec .basicContain {
         width: 47%;
     }
+    .cyl-user-profile {
+        width: 230px;
+    }
+    .exchanges-page .add-homeSec2 img {
+        height: 380px;
+    }
 }
 
 @media (max-width: 539px) {
@@ -608,9 +614,18 @@
     .popup-form-card h3{
         font-size: 25px;
     }
+    .exchanges-page .add-homeSec2 img {
+        height: 350px;
+    }
+    
 }
 @media(max-width: 610px) {
     .add-homeSec2.step4 img {
+        height: 300px;
+    }
+}
+@media screen and (max-width: 475px) {
+    .exchanges-page .add-homeSec2 img {
         height: 300px;
     }
 }
@@ -685,6 +700,14 @@
     }
     .counter1 i {
         padding: 3px;
+    }
+    .exchanges-page .add-homeSec2 img {
+        height: 250px;
+    }
+}
+@media (max-width: 345px) {
+    .exchanges-page .add-homeSec2 img {
+        height: 200px;
     }
 }
 @media (max-width: 325px) {
