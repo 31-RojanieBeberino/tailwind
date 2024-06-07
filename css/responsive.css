@@ -740,8 +740,8 @@
     .discover-card img, .exp-card img {
         height: 300px;
     }
-    .inner-section-step div {
-        width: 100%;
+    .inner-section-step div, .discover-card, .image.card {
+        width: 100% !important;
     }
 }
 @media (max-width: 385px) {
