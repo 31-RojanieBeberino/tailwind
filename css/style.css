@@ -2097,6 +2097,7 @@ input[name="full-name-sign-up"] {
     flex-direction: column;
     gap:15px;
     box-shadow: 0px 0px 5px #0000004f;
+    z-index: 100;
 }
 
 

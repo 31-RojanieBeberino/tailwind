@@ -722,6 +722,9 @@
     .counter1 img {
         height: 20px;
     }
+    .discover-card {
+        width: 100%;
+    }
 }
 @media (max-width: 425px) {
     .profileUpload {
@@ -733,6 +736,12 @@
     .inputBtn input[type="button"] {
         padding: 15px;
         font-size: 18px;
+    }
+    .discover-card img, .exp-card img {
+        height: 300px;
+    }
+    .inner-section-step div {
+        width: 100%;
     }
 }
 @media (max-width: 385px) {
