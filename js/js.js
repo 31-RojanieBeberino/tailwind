@@ -6,22 +6,22 @@ jQuery(document).ready(function() {
       // console.log('test');
   });
   jQuery("#hovertitle").hover(function() {
-    jQuery("#hovercontent").toggle();
+    jQuery("#hovercontent").slideToggle();
 });
   jQuery("#hovertitle1").hover(function() {
-    jQuery("#hovercontent1").toggle();
+    jQuery("#hovercontent1").slideToggle();
 });
   jQuery("#hovertitle2").hover(function() {
-    jQuery("#hovercontent2").toggle();
+    jQuery("#hovercontent2").slideToggle();
 });
   jQuery("#hovertitle3").hover(function() {
-    jQuery("#hovercontent3").toggle();
+    jQuery("#hovercontent3").slideToggle();
 });
   jQuery("#hovertitle4").hover(function() {
-    jQuery("#hovercontent4").toggle();
+    jQuery("#hovercontent4").slideToggle();
 });
   jQuery("#hovertitle5").hover(function() {
-    jQuery("#hovercontent5").toggle();
+    jQuery("#hovercontent5").slideToggle();
 });
 });
 //! script for user profile dropdown arrow
