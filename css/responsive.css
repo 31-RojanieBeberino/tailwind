@@ -330,6 +330,7 @@
 @media (max-width: 580px) {
     .basicSec .basicContain {
         width: 47%;
+        height: 130px;
     }
     .cyl-user-profile {
         width: 230px;
@@ -667,8 +668,13 @@
     }
 }
 @media (max-width: 445px) {
-    .add-homeSec1 h1 {
-        font-size: 40px;
+    .add-homeSec1 h1, section#my-profile h1 {
+        font-size: 38px;
+    }
+    .add-homeSec1 p, #add-home-tab .radio-buttons label,
+    .accordion .accordion-header,
+    div#counter, div#counter2, div#counter3, div#counter4, div#counter5, div#counter6, div#counter7 {
+        font-size: 18px;
     }
     .add-homeSec2 img {
         height: 350px;
@@ -724,6 +730,10 @@
     .profileForm {
         padding: 25px;
     }
+    .inputBtn input[type="button"] {
+        padding: 15px;
+        font-size: 18px;
+    }
 }
 @media (max-width: 385px) {
     .add-homeSec2 img {
@@ -747,6 +757,15 @@
     .exchanges-page .add-homeSec2 img {
         height: 250px;
     }
+    .add-homeSec1 h1, section#my-profile h1 {
+        font-size: 33px;
+    }
+}
+@media (max-width: 349px) {
+    .fomr1Sec1, .fomr1Sec2 {
+        width: 290px !important;
+        
+    }    
 }
 @media (max-width: 345px) {
     .exchanges-page .add-homeSec2 img {
@@ -768,5 +787,8 @@
     }
     #my-membership {
         width: 90%;
+    }
+    .profileUpload {
+        gap: 10px;
     }
 }
