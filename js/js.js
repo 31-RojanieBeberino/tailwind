@@ -1,3 +1,33 @@
+// script for user profile dropdown arrow
+
+jQuery(document).ready(function() {
+  jQuery("#triggerImage").click(function() {
+      jQuery("#content").toggle();
+      // console.log('test');
+  });
+  jQuery("#hovertitle").hover(function() {
+    jQuery("#hovercontent").toggle();
+});
+  jQuery("#hovertitle1").hover(function() {
+    jQuery("#hovercontent1").toggle();
+});
+  jQuery("#hovertitle2").hover(function() {
+    jQuery("#hovercontent2").toggle();
+});
+  jQuery("#hovertitle3").hover(function() {
+    jQuery("#hovercontent3").toggle();
+});
+  jQuery("#hovertitle4").hover(function() {
+    jQuery("#hovercontent4").toggle();
+});
+  jQuery("#hovertitle5").hover(function() {
+    jQuery("#hovercontent5").toggle();
+});
+});
+//! script for user profile dropdown arrow
+
+
+
 // js for Create-Your-Listing-Main-Page-Add-Home-Tab-Step-4.html and Create-Your-Listing-Main-Page-Add-Home-Tab-Step-5.html
 let count = 0;
 let count2 = 0; 

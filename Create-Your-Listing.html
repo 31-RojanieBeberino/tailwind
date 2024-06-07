@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <title>Create Your Listing</title>
+     <!-- script for user dropdown header -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
 
@@ -19,21 +21,21 @@
             <div class="nav-user-sec">
                 <div class="cyl-user-profile">
                     <img src="/images/user-img.png">
-                    <p>My Account <img class="toggle-profile" src="/images/drop-arrow.png"></p>
+                    <p>My Account <img class="toggle-profile" src="/images/drop-arrow.png" id="triggerImage" src="/images/drop-arrow.png" alt="Click to toggle content" style="cursor:pointer;"></p>
                 </div>
 
+                
 
-
-                <div class="cyl-user-dropdown-card">
+                <div class="cyl-user-dropdown-card" id="content" style="display:none;">
                     <div class="db-items">
                         <img src="/images/main-user.png">
-                        <h4>My Profile</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt u</p>
+                        <h4 id="hovertitle" style="cursor:pointer;">My Profile</h4>
+                        <p id="hovercontent" style="display:none;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt u</p>
                     </div>
                     <div class="db-items">
                         <img src="/images/add-a-home.png">
-                        <h4>Add a Home</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt u</p>
+                        <h4 id="triggerContentImage" style="cursor:pointer;">Add a Home</h4>
+                        <p id="contentbox" style="display:none;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt u</p>
                     </div>
                     <div class="db-items">
                         <img src="/images/my-membership.png">

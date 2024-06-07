@@ -791,4 +791,7 @@
     .profileUpload {
         gap: 10px;
     }
+    #content {
+        right: 10px;
+    }
 }

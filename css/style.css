@@ -2141,11 +2141,17 @@ input[name="full-name-sign-up"] {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
 }
 .userLogo img {
-    height: 50px;
+    height: 40px;
 }
+/* css for dropdown card */
+#content {
+    right: 20px;
+    left: auto;
+}
+/* ! css for dropdown card */
 .userDropdown {
     display: flex;
     justify-content: center;
@@ -2155,10 +2161,10 @@ input[name="full-name-sign-up"] {
 .userDropdown p {
     color: #000;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 500;
 }
 img.toggle-profile {
-    height: 20px;
+    height: 16px;
 }
 .add-home-tab .main-navbar {
     justify-content: space-between;
