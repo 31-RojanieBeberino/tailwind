@@ -2176,7 +2176,7 @@ img.toggle-profile {
     position: static;
 }
 .inner-pages-navbar.add-home-tab {
-    position: static !important;
+    /* position: static !important; */
 }
 #add-home-tab {
     display: flex;
@@ -2193,7 +2193,7 @@ img.toggle-profile {
     gap: 20px;
 }
 #add-home-tab .inner-main-sec {
-    padding: 100px 20px;
+    padding: 200px 20px;
     max-width: 1330px;
 }
 .add-homeSec1 h1 {
