@@ -97,6 +97,10 @@ h1, h2, h3, h4, h5, p, a, div, input, select, textarea {
     z-index: 10000;
 }
 
+#homepage-navbar {
+    /* position: fixed; */
+}
+
 
 .main-navbar{
     width:100%;
@@ -396,6 +400,7 @@ h1, h2, h3, h4, h5, p, a, div, input, select, textarea {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .discover-flex {
@@ -2091,7 +2096,7 @@ input[name="full-name-sign-up"] {
     border-radius: 15px;
     width: 300px;
     position: absolute;
-    top: 70px;
+    top: 100px;
     left: 0px;
     display: flex;
     flex-direction: column;
@@ -2138,6 +2143,10 @@ input[name="full-name-sign-up"] {
 }
 
 /* Ralph CSS */
+input[type="radio"] {
+    accent-color: #FF6700;
+    transform: scale(1.5);
+}
 .userProfile {
     display: flex;
     justify-content: center;
@@ -2151,6 +2160,7 @@ input[name="full-name-sign-up"] {
 #content {
     right: 20px;
     left: auto;
+    position: fixed;
 }
 /* ! css for dropdown card */
 .userDropdown {
@@ -2260,6 +2270,10 @@ img.toggle-profile {
 }
 #add-home-tab .radio-buttons label {
     font-size: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
 }
 #black-line {
     width: 100%;
@@ -2488,7 +2502,7 @@ section#my-profile {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 50px 20px;
+    padding: 200px 20px 100px;
     gap: 50px;
 }
 section#my-profile h1 {
@@ -2564,4 +2578,7 @@ div#profile-info label {
 }
 #myProfilebtn {
     justify-content: center;
+}
+.drp-buttons {
+    display: none;
 }

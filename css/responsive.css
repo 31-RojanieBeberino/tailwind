@@ -9,6 +9,9 @@
         flex-direction: column;
         align-items: center;
     }
+    .inner-section-faqs-sec-one div {
+        width: 100%;
+    }
 
     .nav-list{
         position: fixed;
@@ -320,6 +323,14 @@
     #my-membership {
         width: 90%;
     }
+    .hiw-content h2 {
+        font-size: 70px;
+    }
+}
+@media (max-width: 1024px) and (min-width: 922px) {
+    .nav-create-btn {
+        width: 50%;
+    }
 }
 @media (max-width: 768px) {
     #add-home-tab .inner-main-sec {
@@ -331,6 +342,19 @@
     .context.browse-page-title p {
         text-align: center;
     }
+    .content.our-story.team p, .hdw-flex p {
+        width: 100%;
+    }
+    .discover-card {
+        width: auto;
+    }
+    .hiw-content h2 {
+        font-size: 55px;
+    }
+    .inner-section-step.step-2.team-sec .image.card {
+        width: 100% !important;
+    }
+    
 }
 
 @media (max-width: 580px) {
@@ -451,6 +475,7 @@
         gap:10px;
         flex-direction: column;
         align-items: center;
+        text-align: center;
     }
 
     .section-how-it-works{
@@ -655,8 +680,18 @@
         font-size: 7px;
         padding: 5px;
     }
-    
-    
+    .subs-content form input[type="email"], .home-banner form input[type="email"] {
+        font-size: 18px;
+    }
+    .footer-brand {
+        align-items: flex-start;
+    }
+    .footer-brand p {
+        text-align: left;
+    }
+    .bottom-footer p {
+    font-size: 13px;
+    }
 }
 @media(max-width: 610px) {
     .add-homeSec2.step4 img {
@@ -754,7 +789,7 @@
     }
     .nav-toggle .bar {
         height: 4px;
-        width: 90%;
+        width: 80%;
     }
     .navbar-brand img {
         width: 50%;
@@ -764,6 +799,15 @@
     }
     img#disSec, .exp-card img {
         height: 300px;
+    }
+    .team-images .image.card {
+        padding: 40px 20px;
+    }
+    section#my-profile {
+        padding: 200px 20px 50px;
+    }
+    .our-story h2, .cyl-banner h2,.inner-section-desires h3 {
+        font-size: 40px;
     }
 }
 @media (max-width: 385px) {
@@ -795,6 +839,20 @@
     .add-homeSec1 h1, section#my-profile h1 {
         font-size: 33px;
     }
+    .subs-content form input[type="email"], .home-banner form input[type="email"] {
+        font-size: 16px;
+    }
+}
+@media (max-width: 350px) {
+    .faqs-content {
+        /* width: 95%; */
+    }
+    .follow-btn.membership {
+        width: 100%;
+    }
+    .hdw-row img {
+        height: 320px;
+    }
 }
 @media (max-width: 349px) {
     .fomr1Sec1, .fomr1Sec2 {
@@ -820,7 +878,7 @@
     .user-btn {
         flex-wrap: wrap;
         gap: 20px;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
     }
     .user-sec {
@@ -841,5 +899,8 @@
     }
     #content {
         right: 10px;
+    }
+    .card h4, .number h4 {
+        font-size: 23px;
     }
 }
