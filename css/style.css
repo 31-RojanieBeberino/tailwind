@@ -94,7 +94,11 @@ h1, h2, h3, h4, h5, p, a, div, input, select, textarea {
     position: absolute;
     top:0;
     left: 0;
-    z-index: 99;
+    z-index: 10000;
+}
+
+#homepage-navbar {
+    /* position: fixed; */
 }
 
 
@@ -128,7 +132,7 @@ h1, h2, h3, h4, h5, p, a, div, input, select, textarea {
 }
 
 .nav-list li a {
-    padding:15px 20px;
+    padding:15px 10px;
     text-decoration: none;
     font-size: 17px;
     color:#fff;
@@ -396,6 +400,7 @@ h1, h2, h3, h4, h5, p, a, div, input, select, textarea {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .discover-flex {
@@ -430,7 +435,7 @@ h1, h2, h3, h4, h5, p, a, div, input, select, textarea {
     max-width: 1300px;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     gap:100px;
 }
 
@@ -1076,7 +1081,9 @@ section.join {
     content: '\002B' !important;
     color: #FF6700;
 }
-
+.fa.fa-caret-down:before {
+    color: #FF6700;
+}
 
 
 .section-browse-sec{
@@ -2089,12 +2096,13 @@ input[name="full-name-sign-up"] {
     border-radius: 15px;
     width: 300px;
     position: absolute;
-    top: 70px;
+    top: 100px;
     left: 0px;
     display: flex;
     flex-direction: column;
     gap:15px;
     box-shadow: 0px 0px 5px #0000004f;
+    z-index: 100;
 }
 
 
@@ -2134,3 +2142,443 @@ input[name="full-name-sign-up"] {
     line-height: 1.2em;
 }
 
+/* Ralph CSS */
+input[type="radio"] {
+    accent-color: #FF6700;
+    transform: scale(1.5);
+}
+.userProfile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.userLogo img {
+    height: 40px;
+}
+/* css for dropdown card */
+#content {
+    right: 20px;
+    left: auto;
+    position: fixed;
+}
+/* ! css for dropdown card */
+.userDropdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.userDropdown p {
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+}
+img.toggle-profile {
+    height: 16px;
+}
+.add-home-tab .main-navbar {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-navbar.add-home-tab {
+    position: static;
+}
+.inner-pages-navbar.add-home-tab {
+    /* position: static !important; */
+}
+#add-home-tab {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+}
+#add-home-tab .inner-main-sec {
+    padding: 200px 20px;
+    max-width: 1330px;
+}
+.add-homeSec1 h1 {
+    font-size: 49px;
+}
+.add-homeSec1 p {
+    color: #000;
+}
+.add-homeSec2 img {
+    width: auto;
+    height: 400px;
+}
+#add-home-tab #form1 .fomr1Sec1,
+#add-home-tab #form2 .fomr1Sec1 {
+    --orange: #FF6700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 150px;
+    background: var(--orange);
+    padding: 20px;
+    border-radius: 15px;
+}
+#add-home-tab #form1 p,
+#add-home-tab #form2 p {
+    color: #fff;
+}
+#add-home-tab #form1 .fomr1Sec2,
+#add-home-tab #form2 .fomr1Sec2 {
+    --silver: #D1D1D1;
+    background: var(--silver);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 15px;
+}
+#add-home-tab #form1 .fomr1Sec2 p,
+#add-home-tab #form2 .fomr1Sec2 p {
+    color: #000;
+}
+.add-home-tab-optionSec,
+#add-home-tab .radio-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#add-home-tab .form-container #form1,
+#add-home-tab .form-container #form2 {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+#stepforms {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+}
+#add-home-tab .radio-buttons label {
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+#black-line {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.black-line {
+    max-width: 1330px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.black-line::after {
+    content: "";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-top: 2px solid #000;
+}
+#add-homeSec-footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.inputBtn {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    max-width: 1330px;
+    width: 100%;
+}
+.inputBtn input[type="button"] {
+    cursor: pointer;
+}
+.inputBtn input[type="button"] {
+    --orange: #FF6700;
+    background: var(--orange);
+    padding: 20px 40px;
+    display: flex;
+    border: none;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+}
+#step2.inputBtn {
+    justify-content: space-between;
+}
+#step2.inputBtn input[type="button"]:nth-child(1) {
+    background: #CCCCCC;
+    color: #000;
+}
+#step2 .inputBtnStep3 {
+    display: flex;
+    gap: 20px;
+}
+#step2 .inputBtnStep3 input[type="button"]:nth-child(1) {
+    background: #5D5D5D;
+    color: #fff;
+}
+.step7 input[type="button"] {
+    background: #FF6700 !important;
+}
+.accordion.step4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.step4 .accordion-item:nth-child(1) {
+    width: 65%;
+}
+.step4 .accordion-item:nth-child(2) {
+    width: 30%;
+}
+.counter1 {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.counter1 i {
+    border: 1px solid #FF6700;
+    padding: 5px;
+    /* color: #FF6700; */
+    border-radius: 50%;
+    --g: #FF6700;
+    color: var(--g);
+    cursor: pointer;
+}
+.counter1 img {
+    height: 30px;
+    /* aspect-ratio: 1; */
+}
+div#counter, div#counter2, div#counter3,
+div#counter4, div#counter5, div#counter6,
+div#counter7 {
+    font-size: 20px;
+}
+.counterSec {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.counter1:nth-child(2) {
+    gap: 22px;
+}
+.step5 .counter1 {
+    display: flex;
+    justify-content: space-between;
+}
+.imgTxt, .counTer {
+    display: flex;
+    gap: 20px;
+}
+#basicSec {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 30px;
+    position: relative;
+    width: 80%;
+}
+.basicSec {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    
+}
+.basicSec .basicContain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 150px;
+    width: 27%;
+    border: 2px solid #808080;
+    border-radius: 10px;
+    text-align: center;
+}
+.basicSec .basicContain:hover {
+    background: #FF6700;
+    border: 2px solid transparent;
+}
+.basicSec .basicContain img {
+    width: auto;
+    height: 65px;
+    object-fit: contain;
+}
+.basicSec p {
+    font-size: 16px;
+}
+.basicTxt p {
+    color: #FF6700;
+    text-decoration: underline;
+}
+.step7-page7 textarea {
+    resize: none;
+    background: #F6F6F6;
+    border: 0;
+}
+.exchanges-page, .my-profile {
+    background: #F6F6F6;
+}
+.exchanges-page .inner-main-sec {
+    justify-content: center;
+    align-items: center;
+}
+.exchanges-page .content {
+    align-items: center;
+}
+.exchanges-page h1, .exchanges-page p {
+    text-align: center;
+}
+.exchanges-page input[type="button"] {
+    background: #FF6700;
+    border: 0;
+    padding: 20px 60px;
+    border-radius: 8px;
+    color: #fff;
+}
+#referAFriend.code {
+    text-align: center;
+    border: 2px dashed #FF6700;
+    padding: 15px;
+}
+#referAFriend.code::placeholder {
+    font-size: 20px;
+}
+#my-membership {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 70%;
+}
+#my-membership ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#my-membership ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#my-membership li {
+    list-style: none;
+}
+#my-membership li::before {
+    content: "\2713";
+    font-size: 12px;
+    margin-right: 10px;
+    color: #fff;
+    background: #FF6700;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+section#my-profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 200px 20px 100px;
+    gap: 50px;
+}
+section#my-profile h1 {
+    font-size: 50px;
+}
+#my-profile form {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.profileForm {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    background: #F6F6F6;
+    padding: 50px;
+    border-radius: 8px;
+    gap: 20px;
+}
+.profileUpload {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.profileUpload .edit-photo {
+    background: url('/images/upload.png');
+    background-position: left;
+    background-size: 18px;
+    background-repeat: no-repeat;
+    padding-left: 25px;
+    border-radius: 5px;
+}
+.profileUpload input[type="button"] {
+    border: 0;
+    padding: 10px 30px;
+    background: #fff;
+    font-size: 18px;
+}
+div#profile-info {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+div#profile-info label {
+    font-size: 18px;
+    font-weight: 700;
+}
+.info-cols1, .info-cols2 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 45%;
+}
+#profile-info input[type="text"], #profile-info input[type="email"],
+#profile-info input[type="password"], #profile-info input[type="number"],
+#profile-info select {
+    background: #fff;
+    border: 0;
+    height: 50px;
+    border-radius: 8px;
+}
+.info-cols1.textArea {
+    width: 100%;
+}
+.info-cols1.textArea textarea {
+    border: 0;
+    background: #fff;
+    resize: none;
+}
+#myProfilebtn {
+    justify-content: center;
+}
+.drp-buttons {
+    display: none;
+}

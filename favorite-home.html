@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css">
+    <title>Favorite Home</title>
+</head>
+<body>
+
+
+    <navbar class="section-navbar inner-pages-navbar add-home-tab" id="navbar-favorite">
+        <nav class="main-navbar">
+                <img class="logo" src="images/logoMain.webp">
+                <!-- user arrow -->
+                <div class="userProfile">
+                    <div class="userLogo">
+                        <img src="/images/user-img.png">
+                    </div>
+                    <div class="userDropdown">
+                        <p>My Account</p>
+                        <img class="toggle-profile" id="triggerImage" src="/images/drop-arrow.png" alt="Click to toggle content" style="cursor:pointer;">
+                    </div>
+                </div>
+        </nav>
+    </navbar>
+   <!-- drodown card -->
+    <div class="cyl-user-dropdown-card" id="content" style="display:none;">
+        <div class="db-items">
+            <img src="/images/main-user.png">
+            <h4 id="hovertitle" style="cursor: pointer;">My Profile</h4>
+            <p id="hovercontent" style="display: none;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt u</p>
+        </div>
+        <div class="db-items">
+            <img src="/images/add-a-home.png">
+            <h4 id="hovertitle1" style="cursor: pointer;">Add a Home</h4>
+            <p id="hovercontent1" style="display: none;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt u</p>
+        </div>
+        <div class="db-items">
+            <img src="/images/my-membership.png">
+            <h4 id="hovertitle2" style="cursor: pointer;">My Membership</h4>
+            <p id="hovercontent2" style="display: none;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt u</p>
+        </div>
+        <div class="db-items">
+            <img src="/images/exchages.png">
+            <h4 id="hovertitle3" style="cursor: pointer;">Exchanges</h4>
+            <p id="hovercontent3" style="display: none;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt u</p>
+        </div>
+        <div class="db-items">
+            <img src="/images/fav-home.png">
+            <h4 id="hovertitle4" style="cursor: pointer;">Favorite Homes</h4>
+            <p id="hovercontent4" style="display: none;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt u</p>
+        </div>
+        <div class="db-items">
+            <img src="/images/ref-your-friend.png">
+            <h4 id="hovertitle5" style="cursor: pointer;">Refer Your Friend</h4>
+            <p id="hovercontent5" style="display: none;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt u</p>
+        </div>
+
+        <div class="logout-item">
+            <img src="/images/main-user.png">
+            <h4 style="cursor: pointer;">Log Out</h4>
+        </div>
+    </div>
+    <!-- navbar -->
+            <section id="add-home-tab" class="exchanges-page">
+                        <div class="inner-main-sec">
+                            <div class="add-homeSec1">
+                                <div class="content">
+                                <h1>Favorite Homes</h1>
+                                <p>You'll find below the homes you have added to your favorites.</p>
+                                <p>You don't have any favorite homes yet. To add a home to your favorites click  Add home </p>
+                                <div class="add-home-tab-optionSec">
+                                  
+                    <input type="button" value="ADD FAVORITE HOME" name="" id="">
+
+                                </div>
+                                </div>
+                            </div>
+                                <div class="add-homeSec2">
+                                    <img src="/images/Select house-pana.png" alt="">
+                                </div>
+                        </div>
+
+            </section>
+
+        <footer class="section-footer">
+            <div class="inner-footer-content">
+                <div class="top-footer">
+                    <div class="top-footer-content">
+                        <div class="footer-brand">
+                            <img src="images/logoMain.webp">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                        <div class="footer-list-menu">
+                            <h3>Quick Links</h3>
+                            <a href="#">Browse Homes</a>
+                            <a href="#">How It Works</a>
+                            <a href="#">About Us</a>
+                            <a href="#">Membership</a>
+                            <a href="#">Faqs</a>
+                            <a href="#">Contact Us</a>
+                        </div>
+                        <div class="footer-follow-us">
+                            <h3>Follow us</h3>
+                            <div class="follow-icons">
+                                <img src="images/fb.png">
+                                <img src="images/twitter.png">
+                                <img src="images/linkedIn.png">
+                                <img src="images/email.png">
+                            </div>
+                        </div>
+                        <div class="footer-get-started">
+                            <h3>Get Started</h3>
+                            <a href="#" class="bam">Become A Member</a>
+                            <a href="#" class="cyl">Create Your Listing</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-footer">
+                    <div class="bot-footer-content">
+                        <p>© Tailwind Trades 2024 all rights reserved</p>
+                        <p>Terms and Condition  |   Refund Policy</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="js/js.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/moment/moment.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+</body>
+</html>

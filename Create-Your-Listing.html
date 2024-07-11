@@ -6,65 +6,65 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <title>Create Your Listing</title>
+     <!-- script for user dropdown header -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
 
-    <navbar class="section-navbar inner-pages-navbar">
-        <nav class="main-navbar cyl-header">
-            <div class="navbar-brand">
-                <img src="images/logoMain.webp">
-            </div>
-           
-
-            <div class="nav-user-sec">
-                <div class="cyl-user-profile">
-                    <img src="/images/user-img.png">
-                    <p>My Account <img class="toggle-profile" src="/images/drop-arrow.png"></p>
-                </div>
-
-
-
-                <div class="cyl-user-dropdown-card">
-                    <div class="db-items">
-                        <img src="/images/main-user.png">
-                        <h4>My Profile</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt u</p>
+    <navbar class="section-navbar inner-pages-navbar add-home-tab">
+        <nav class="main-navbar">
+                <img class="logo" src="images/logoMain.webp">
+                <!-- user arrow -->
+                <div class="userProfile">
+                    <div class="userLogo">
+                        <img src="/images/user-img.png">
                     </div>
-                    <div class="db-items">
-                        <img src="/images/add-a-home.png">
-                        <h4>Add a Home</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt u</p>
-                    </div>
-                    <div class="db-items">
-                        <img src="/images/my-membership.png">
-                        <h4>My Membership</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt u</p>
-                    </div>
-                    <div class="db-items">
-                        <img src="/images/exchages.png">
-                        <h4>Exchanges</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt u</p>
-                    </div>
-                    <div class="db-items">
-                        <img src="/images/fav-home.png">
-                        <h4>Favorite Homes</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt u</p>
-                    </div>
-                    <div class="db-items">
-                        <img src="/images/ref-your-friend.png">
-                        <h4>Refer Your Friend</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt u</p>
-                    </div>
-
-                    <div class="logout-item">
-                        <img src="/images/main-user.png">
-                        <h4>Log Out</h4>
+                    <div class="userDropdown">
+                        <p>My Account</p>
+                        <img class="toggle-profile" id="triggerImage" src="/images/drop-arrow.png" alt="Click to toggle content" style="cursor:pointer;">
                     </div>
                 </div>
-            </div>
-        </nav>
-    </navbar>
+                </nav>
+                </navbar>
+                <!-- drodown card -->
+                <div class="cyl-user-dropdown-card" id="content" style="display:none;">
+                <div class="db-items">
+                <img src="/images/main-user.png">
+                <h4 id="hovertitle" style="cursor: pointer;">My Profile</h4>
+                <p id="hovercontent" style="display: none;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt u</p>
+                </div>
+                <div class="db-items">
+                <img src="/images/add-a-home.png">
+                <h4 id="hovertitle1" style="cursor: pointer;">Add a Home</h4>
+                <p id="hovercontent1" style="display: none;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt u</p>
+                </div>
+                <div class="db-items">
+                <img src="/images/my-membership.png">
+                <h4 id="hovertitle2" style="cursor: pointer;">My Membership</h4>
+                <p id="hovercontent2" style="display: none;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt u</p>
+                </div>
+                <div class="db-items">
+                <img src="/images/exchages.png">
+                <h4 id="hovertitle3" style="cursor: pointer;">Exchanges</h4>
+                <p id="hovercontent3" style="display: none;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt u</p>
+                </div>
+                <div class="db-items">
+                <img src="/images/fav-home.png">
+                <h4 id="hovertitle4" style="cursor: pointer;">Favorite Homes</h4>
+                <p id="hovercontent4" style="display: none;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt u</p>
+                </div>
+                <div class="db-items">
+                <img src="/images/ref-your-friend.png">
+                <h4 id="hovertitle5" style="cursor: pointer;">Refer Your Friend</h4>
+                <p id="hovercontent5" style="display: none;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt u</p>
+                </div>
 
+                <div class="logout-item">
+                <img src="/images/main-user.png">
+                <h4 style="cursor: pointer;">Log Out</h4>
+                </div>
+                </div>
+                <!-- navbar -->
 
     <section class="section-how-it-works public-section" style="background-image: url(images/home-banner.webp);">
         <div class="inner-section-hiw inner-main-sec">

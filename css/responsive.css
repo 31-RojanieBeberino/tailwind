@@ -1,6 +1,16 @@
+@media (max-width: 1340px) {
+    .black-line {
+        width: 95%;
+    }
+}
+
 @media screen and (max-width:1024px){
     .inner-main-sec{
         flex-direction: column;
+        align-items: center;
+    }
+    .inner-section-faqs-sec-one div {
+        width: 100%;
     }
 
     .nav-list{
@@ -46,6 +56,7 @@
 
     .nav-toggle{
         display: flex;
+        align-items: flex-end;
     }
 
 
@@ -61,6 +72,7 @@
 
     .nav-buttons{
         width: 50%;
+        justify-content: flex-end;
     }
 
     .team-images{
@@ -230,7 +242,7 @@
 
     .inner-utils{
         flex: auto!important;
-        width: 20%;
+        /* width: 20%; */
     }
 
 
@@ -301,11 +313,68 @@
     .desire-item{
         width: 100%!important;
     }
+    #add-home-tab .inner-main-sec {
+        justify-content: center;
+        align-items: center;
+    }
+    #basicSec {
+        width: 100%;
+    }
+    #my-membership {
+        width: 90%;
+    }
+    .hiw-content h2 {
+        font-size: 70px;
+    }
+}
+@media (max-width: 1024px) and (min-width: 922px) {
+    .nav-create-btn {
+        width: 50%;
+    }
+}
+@media (max-width: 768px) {
+    #add-home-tab .inner-main-sec {
+        padding: 200px 20px 100px;
+    }
+    #my-profile form, .info-cols1, .info-cols2 {
+        width: 100%;
+    }
+    .context.browse-page-title p {
+        text-align: center;
+    }
+    .content.our-story.team p, .hdw-flex p {
+        width: 100%;
+    }
+    .discover-card {
+        width: auto;
+    }
+    .hiw-content h2 {
+        font-size: 55px;
+    }
+    .inner-section-step.step-2.team-sec .image.card {
+        width: 100% !important;
+    }
+    
 }
 
+@media (max-width: 580px) {
+    .basicSec .basicContain {
+        width: 47%;
+        height: 130px;
+    }
+    .cyl-user-profile {
+        width: 230px;
+    }
+    .exchanges-page .add-homeSec2 img {
+        height: 380px;
+    }
+}
 
-
-
+@media (max-width: 539px) {
+    .basicSec .basicContain {
+        width: 100%;
+    }
+}
 
 @media screen and (max-width:500px){
     .destop{
@@ -406,6 +475,7 @@
         gap:10px;
         flex-direction: column;
         align-items: center;
+        text-align: center;
     }
 
     .section-how-it-works{
@@ -586,5 +656,251 @@
 
     .popup-form-card h3{
         font-size: 25px;
+    }
+    img.logo {
+        height: 40px;
+    }
+    .exchanges-page .add-homeSec2 img {
+        height: 350px;
+    }
+    .userDropdown p {
+        display: none;
+    }
+    .userProfile {
+        gap: 15px;
+    }
+    #my-membership {
+        width: 100%;
+    }
+    #my-membership li {
+        list-style: none;
+        font-size: 16px;
+    }
+    #my-membership li::before {
+        font-size: 7px;
+        padding: 5px;
+    }
+    .subs-content form input[type="email"], .home-banner form input[type="email"] {
+        font-size: 18px;
+    }
+    .footer-brand {
+        align-items: flex-start;
+    }
+    .footer-brand p {
+        text-align: left;
+    }
+    .bottom-footer p {
+    font-size: 13px;
+    }
+}
+@media(max-width: 610px) {
+    .add-homeSec2.step4 img {
+        height: 300px;
+    }
+}
+@media screen and (max-width: 475px) {
+    .exchanges-page .add-homeSec2 img {
+        height: 300px;
+    }
+}
+@media (max-width: 470px) {
+    .add-homeSec2.step4 img {
+        height: 250px;
+    }
+}
+@media (max-width: 445px) {
+    .add-homeSec1 h1, section#my-profile h1 {
+        font-size: 38px;
+    }
+    .add-homeSec1 p, #add-home-tab .radio-buttons label,
+    .accordion .accordion-header,
+    div#counter, div#counter2, div#counter3, div#counter4, div#counter5, div#counter6, div#counter7 {
+        font-size: 18px;
+    }
+    .add-homeSec2 img {
+        height: 350px;
+    }
+    .inputBtn {
+        justify-content: center;
+        align-items: center;
+    }
+    .step3 {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .inputBtnStep3 {
+        flex-direction: column;
+        width: 100%;
+    }
+    input[type="button"] {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    #step2.inputBtn {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .accordion.step4 {
+        flex-wrap: wrap;
+    }
+    .step4 .accordion-item:nth-child(1),
+    .step4 .accordion-item:nth-child(2) {
+        width: 100%;
+    }
+    .counter1 {
+        gap: 10px;
+    }
+    .counter1:nth-child(2) {
+        gap: 11px;
+    }
+    .counTer {
+        gap: 10px;
+    }
+    .step5 .counter1 p {
+        font-size: 14px;
+    }
+    .counter1 img {
+        height: 20px;
+    }
+    .discover-card {
+        width: 100%;
+    }
+}
+@media (max-width: 425px) {
+    .profileUpload {
+        gap: 20px;
+    }
+    .profileForm {
+        padding: 25px;
+    }
+    .inputBtn input[type="button"] {
+        padding: 15px;
+        font-size: 18px;
+    }
+    /* .discover-card img, .exp-card img {
+        height: 300px;
+    } */
+    .schedule-sec {
+        height: 200px;
+    }
+    .inner-section-step div, .discover-card, .image.card {
+        width: 100% !important;
+    }
+    .nav-toggle .bar {
+        height: 4px;
+        width: 80%;
+    }
+    .navbar-brand img {
+        width: 50%;
+    }
+    .subs-content form input[type="submit"], .home-banner form input[type="submit"] {
+        width: 50%;
+    }
+    img#disSec, .exp-card img {
+        height: 300px;
+    }
+    .team-images .image.card {
+        padding: 40px 20px;
+    }
+    section#my-profile {
+        padding: 200px 20px 50px;
+    }
+    .our-story h2, .cyl-banner h2,.inner-section-desires h3 {
+        font-size: 40px;
+    }
+}
+@media (max-width: 385px) {
+    .add-homeSec2 img {
+        height: 300px;
+    }
+    /* .profileUpload {
+        flex-direction: column;
+    } */
+    .browse-utilities {
+        justify-content: space-around;
+        gap: 15px;
+    }
+}
+@media (max-width: 375px) {
+    .add-homeSec2.step4 img {
+        height: 200px;
+    }
+    .counter1 p,
+    div#counter, div#counter2, div#counter3, div#counter4, div#counter5, div#counter6, div#counter7 {
+        font-size: 15px;
+    }
+    .counter1 i {
+        padding: 3px;
+    }
+    .exchanges-page .add-homeSec2 img {
+        height: 250px;
+    }
+    .add-homeSec1 h1, section#my-profile h1 {
+        font-size: 33px;
+    }
+    .subs-content form input[type="email"], .home-banner form input[type="email"] {
+        font-size: 16px;
+    }
+}
+@media (max-width: 350px) {
+    .faqs-content {
+        /* width: 95%; */
+    }
+    .follow-btn.membership {
+        width: 100%;
+    }
+    .hdw-row img {
+        height: 320px;
+    }
+}
+@media (max-width: 349px) {
+    .fomr1Sec1, .fomr1Sec2 {
+        width: 290px !important;
+        
+    }    
+}
+@media (max-width: 345px) {
+    .exchanges-page .add-homeSec2 img {
+        height: 200px;
+    }
+    .userLogo img {
+        height: 30px;
+    }
+    img.toggle-profile {
+        height: 15px;
+    }
+    #my-membership li::before {
+        margin-right: 10px;
+    }
+}
+@media (max-width: 335px) {
+    .user-btn {
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .user-sec {
+        gap: 10px;
+        justify-content: flex-start;
+        width: 100%;
+    }
+}
+@media (max-width: 325px) {
+    .add-home-tab h3 {
+        font-size: 13px;
+    }
+    #my-membership {
+        width: 90%;
+    }
+    .profileUpload {
+        gap: 10px;
+    }
+    #content {
+        right: 10px;
+    }
+    .card h4, .number h4 {
+        font-size: 23px;
     }
 }

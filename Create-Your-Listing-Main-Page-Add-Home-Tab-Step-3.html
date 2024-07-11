@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css">
+    <title>Create Your Listing Main Page - Add Home Tab - Step 3</title>
+</head>
+<body>
+
+
+    <navbar class="section-navbar inner-pages-navbar add-home-tab">
+        <nav class="main-navbar">
+                <img class="logo" src="images/logoMain.webp">
+                <h3><b>STEP 3 / 7</b></h3>
+        </nav>
+    </navbar>
+
+      <form action="" id="stepforms">
+        <section id="add-home-tab">
+            <div class="inner-main-sec">
+                <div class="add-homeSec1">
+                    <div class="content">
+                    <h1>How Would You Describe Your Home's Direct Surroundings?</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    <div class="add-home-tab-optionSec">        
+                        <p><b>Location</b></p>
+                        <script>
+                            // JavaScript Logic
+                            document.addEventListener('DOMContentLoaded', function() {
+                              const accordionItems = document.querySelectorAll('.accordion-item');
+                          
+                              accordionItems.forEach(item => {
+                                const header = item.querySelector('.accordion-header');
+                          
+                                header.addEventListener('click', () => {
+                                  const isActive = item.classList.contains('active');
+                          
+                                  accordionItems.forEach(item => {
+                                    item.classList.remove('active');
+                                  });
+                          
+                                  if (!isActive) {
+                                    item.classList.add('active');
+                                  }
+                                });
+                              });
+                            });
+                          </script>
+                        <div class="accordion">
+                            <div class="accordion-item">
+                              <div class="accordion-header">
+                                Village
+                                <i class="fa fa-caret-down" aria-hidden="true"></i> <!-- Font Awesome icon -->
+                              </div>
+                              <div class="accordion-content">
+                                <p>Content for section 1</p>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <div class="accordion-header">
+                                River
+                                <i class="fa fa-caret-down" aria-hidden="true"></i> <!-- Font Awesome icon -->
+                              </div>
+                              <div class="accordion-content">
+                                <p>Content for section 2</p>
+                              </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+                    </div>
+                </div>
+                <div class="add-homeSec2">
+                    <img src="/images/Smart home-amico.png" alt="">
+                </div>
+            </div>
+
+            <section id="black-line">
+              <div class="black-line"></div>
+            </section>
+            <footer id="add-homeSec-footer">
+              <div class="inputBtn step3" id="step2">
+                  <input type="button" value="Back" name="" id="">
+                  <div class="inputBtnStep3">
+                  <input type="button" value="Skip" name="" id="">
+                  <input type="button" value="Next" name="" id="">
+                  </div>
+              </div>
+          </footer>
+        </section>
+      </form>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/js.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+</body>
+</html>

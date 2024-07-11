@@ -298,7 +298,28 @@
           </div>
       </div>
   </footer>
-
+  <script>
+    // JavaScript Logic
+    document.addEventListener('DOMContentLoaded', function() {
+      const accordionItems = document.querySelectorAll('.accordion-item');
+  
+      accordionItems.forEach(item => {
+        const header = item.querySelector('.accordion-header');
+  
+        header.addEventListener('click', () => {
+          const isActive = item.classList.contains('active');
+  
+          accordionItems.forEach(item => {
+            item.classList.remove('active');
+          });
+  
+          if (!isActive) {
+            item.classList.add('active');
+          }
+        });
+      });
+    });
+  </script>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="js/js.js"></script>
