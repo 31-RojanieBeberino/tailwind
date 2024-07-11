@@ -62,7 +62,7 @@ h1, h2, h3, h4, h5, p, a, div, input, select, textarea {
     color:#000!important;
 }
 
-.inner-menu .nav-create-btn{
+.inner-menu .nav-cre-list-btn{
     color:#fff;
 }
 
@@ -145,7 +145,7 @@ h1, h2, h3, h4, h5, p, a, div, input, select, textarea {
     align-items: center;
 }
 
-.nav-create-btn{
+.nav-cre-list-btn{
     width:70%;
     background-color: #FF6700;
     color:#fff;
