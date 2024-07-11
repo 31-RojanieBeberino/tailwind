@@ -326,9 +326,6 @@
     .hiw-content h2 {
         font-size: 70px;
     }
-    section.AddHomeTab-step2 {
-        padding: 150px 20px 20px;
-    }
 }
 @media (max-width: 1024px) and (min-width: 922px) {
     .nav-create-btn {

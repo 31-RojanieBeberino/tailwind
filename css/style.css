@@ -2190,7 +2190,8 @@ img.toggle-profile {
 .inner-pages-navbar.add-home-tab {
     /* position: static !important; */
 }
-#add-home-tab {
+#add-home-tab, .AddHomeTab-step1,  .AddHomeTab-step2, .AddHomeTab-step3, .AddHomeTab-step4,
+.AddHomeTab-step5, .AddHomeTab-step6, .AddHomeTab-step7 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -2204,8 +2205,11 @@ img.toggle-profile {
     align-items: flex-start;
     gap: 20px;
 }
-#add-home-tab .inner-main-sec {
-    padding: 200px 20px;
+#add-home-tab .inner-main-sec, .AddHomeTab-step1 .inner-main-sec,
+.AddHomeTab-step2 .inner-main-sec, .AddHomeTab-step3 .inner-main-sec,
+.AddHomeTab-step4 .inner-main-sec, .AddHomeTab-step5 .inner-main-sec,
+.AddHomeTab-step6 .inner-main-sec, .AddHomeTab-step7 .inner-main-sec {
+    padding: 200px 20px 50px;
     max-width: 1330px;
 }
 .add-homeSec1 h1 {
@@ -2270,16 +2274,55 @@ img.toggle-profile {
     align-items: center;
     gap: 20px;
 }
-section.AddHomeTab-step2 {
-    padding: 200px 100px 50px;
+
+
+.AddHomeTab-step1 #form1 .fomr1Sec1,
+.AddHomeTab-step1#form2 .fomr1Sec1 {
+    --orange: #FF6700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 150px;
+    background: var(--orange);
+    padding: 20px;
+    border-radius: 15px;
 }
-section.AddHomeTab-step2 .radio-buttons {
+.AddHomeTab-step1 #form1 p,
+.AddHomeTab-step1 #form2 p {
+    color: #fff;
+}
+.AddHomeTab-step1 #form1 .fomr1Sec2,
+.AddHomeTab-step1 #form2 .fomr1Sec2 {
+    --silver: #D1D1D1;
+    background: var(--silver);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 15px;
+}
+.AddHomeTab-step1 #form1 .fomr1Sec2 p,
+.AddHomeTab-step1 #form2 .fomr1Sec2 p {
+    color: #000;
+}
+.add-home-tab-optionSec,
+.AddHomeTab-step1 .radio-buttons {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding-bottom: 20px;
 }
-#add-home-tab .radio-buttons label {
+.AddHomeTab-step1 .form-container #form1,
+.AddHomeTab-step1 .form-container #form2 {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.AddHomeTab-step2 .radio-buttons label {
     font-size: 20px;
     display: flex;
     justify-content: flex-start;

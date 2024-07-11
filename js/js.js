@@ -96,7 +96,7 @@ function DeCounter7() {
 
 // js for Create-Your-Listing-Main-Page-Add-Home-Tab.html
 document.addEventListener('DOMContentLoaded', () => {
-  const radioButtons = document.querySelectorAll('input[name="form-toggle"]');
+  const radioButtons = document.querySelectorAll('input[name="location"]');
   const form1 = document.getElementById('form1');
   const form2 = document.getElementById('form2');
 
