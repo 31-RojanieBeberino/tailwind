@@ -285,6 +285,7 @@ h1, h2, h3, h4, h5, p, a, div, input, select, textarea {
 
 .footer-get-started .bam{
     background-color: #FF6700;
+    width: 100%;
 }
 
 .footer-get-started .cyl{
@@ -2321,18 +2322,23 @@ img.toggle-profile {
     font-size: 20px;
     color: #fff;
 }
-#step2.inputBtn {
+.inputBtn {
     justify-content: space-between;
 }
-#step2.inputBtn input[type="button"]:nth-child(1) {
+
+.inputBtn input[type="button"]:nth-child(1) {
     background: #CCCCCC;
     color: #000;
 }
-#step2 .inputBtnStep3 {
+
+
+.inputBtnStep3 {
     display: flex;
     gap: 20px;
 }
-#step2 .inputBtnStep3 input[type="button"]:nth-child(1) {
+
+
+.inputBtnStep3 input[type="button"]:nth-child(1) {
     background: #5D5D5D;
     color: #fff;
 }
