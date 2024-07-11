@@ -115,8 +115,9 @@ document.addEventListener('DOMContentLoaded', () => {
 //! js for Create-Your-Listing-Main-Page-Add-Home-Tab.html
 
 // js for Create-Your-Listing-Main-Page-Add-Home-Tab-Step-2.html
+
 document.addEventListener('DOMContentLoaded', () => {
-  const radioButtons = document.querySelectorAll('input[name^="location-"]');
+  const radioButtons = document.querySelectorAll('input[name="location"]');
   const forms = [
       document.getElementById('step2form1'),
       document.getElementById('step2form2'),
@@ -129,12 +130,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
   radioButtons.forEach(radio => {
       radio.addEventListener('change', () => {
+          // Display the corresponding form and hide the others
           forms.forEach((form, index) => {
-              form.style.display = radio.value === `step2form${index + 1}` ? 'flex' : 'none';
+              form.style.display = radio.value === `step2form${index + 1}` ? 'block' : 'none';
           });
       });
   });
+
+  // Initially display the form corresponding to the checked radio button
+  radioButtons.forEach(radio => {
+      if (radio.checked) {
+          forms.forEach((form, index) => {
+              form.style.display = radio.value === `step2form${index + 1}` ? 'block' : 'none';
+          });
+      }
+  });
 });
+
+
 
 //! js for Create-Your-Listing-Main-Page-Add-Home-Tab-Step-2.html
 

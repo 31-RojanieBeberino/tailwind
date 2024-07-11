@@ -2147,6 +2147,7 @@ input[name="full-name-sign-up"] {
 input[type="radio"] {
     accent-color: #FF6700;
     transform: scale(1.5);
+    margin-right: 10px;
 }
 .userProfile {
     display: flex;
@@ -2276,6 +2277,7 @@ section.AddHomeTab-step2 .radio-buttons {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding-bottom: 20px;
 }
 #add-home-tab .radio-buttons label {
     font-size: 20px;
