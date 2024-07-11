@@ -2265,8 +2265,16 @@ img.toggle-profile {
 #stepforms {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+section.AddHomeTab-step2 {
+    padding: 200px 100px 50px;
+}
+section.AddHomeTab-step2 .radio-buttons {
+    display: flex;
+    flex-direction: column;
     gap: 20px;
 }
 #add-home-tab .radio-buttons label {
