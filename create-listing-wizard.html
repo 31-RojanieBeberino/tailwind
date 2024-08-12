@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wizard Form</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css">
+
+    
+
+    <style>
+
+.wizard-container {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+}
+
+.wizard-step {
+    display: none;
+}
+
+.wizard-step.active {
+    display: block;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button.prevBtn {
+    background-color: #6c757d;
+}
+
+button.prevBtn:hover {
+    background-color: #565e64;
+} */
+
+    </style>
+
+</head>
+<body>
+    <div class="wizard-container">
+        <form id="wizardForm">
+            <div class="wizard-step active" data-step="1">
+                <h2>Step 1</h2>
+                <navbar class="section-navbar inner-pages-navbar add-home-tab">
+                    <nav class="main-navbar">
+                        <a href="/index.html"><img src="images/logoMain.webp"></a>
+                        <h3><b>STEP 1 / 7</b></h3>
+                    </nav>
+                </navbar>
+                <section class="AddHomeTab-step1">
+                    <div class="inner-main-sec">
+                        <div class="add-homeSec1">
+                            <div class="content">
+                                <h1>Hello Joe, What's Your Home Like?</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                <div class="add-home-tab-optionSec">
+                                    <p><b>Home Type</b></p>
+                                    <div class="form-container">
+                                        <div class="form1" id="form1">
+                                            <div class="fomr1Sec1">
+                                                <img src="images/house.png" alt="">
+                                                <p>House</p>
+                                            </div>
+                                            <div class="fomr1Sec2">
+                                                <img src="images/apartment.png" alt="">
+                                                <p>Apartment</p>
+                                            </div>
+                                        </div>  
+                                        
+                                        <div id="form2" style="display: none;">
+                                            <div class="fomr1Sec2">
+                                                <img src="images/apartment.png" alt="">
+                                                <p>Apartment</p>
+                                            </div>
+                                            <div class="fomr1Sec1">
+                                                <img src="images/house.png" alt="">
+                                                <p>House</p>
+                                            </div>  
+                                        </div>
+    
+                                        <div class="radio-buttons">
+                                            <label>
+                                                <input type="radio" name="location" value="form1" checked>
+                                                The Entire Home
+                                            </label>
+                                            <label>
+                                                <input type="radio" name="location" value="form2">
+                                                Private Room
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="add-homeSec2">
+                            <img src="images/Smart home-amico.png" alt="">
+                        </div>
+                    </div>
+    
+                    <section id="black-line">
+                        <div class="black-line"></div>
+                    </section>
+                    <footer id="add-homeSec-footer">
+                        <div class="inputBtn">
+                            <div class="empty"></div>
+                            <button type="button" class="nextBtn">Next</button>
+                        </div>
+                    </footer>
+                </section>
+            </div>
+
+            <div class="wizard-step" data-step="2">
+                <navbar class="section-navbar inner-pages-navbar add-home-tab">
+                    <nav class="main-navbar">
+                        <a href="/index.html"><img src="images/logoMain.webp"></a>
+                        <h3><b>STEP 2 / 7</b></h3>
+                    </nav>
+                </navbar>
+                <section class="AddHomeTab-step2">
+                    <div class="inner-main-sec">
+                        <div class="add-homeSec1">
+                            <div class="content">
+                            <h1>Tell Us More About <br>Your Home</h1>
+                            <p>Your address (Don't worry, your address will not be displayed on your listing.)</p>
+                            <div class="add-home-tab-optionSec">
+                                <div class="form-container">
+                                    <iframe id="step2form1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3018.9225362197994!2d-73.88367092358195!3d40.829665130403306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f4f09c42d50d%3A0xdf56ea1520582f14!2s1234%20Evergreen%20Ave%2C%20Bronx%2C%20NY%2010472%2C%20USA!5e0!3m2!1sen!2sph!4v1717513890511!5m2!1sen!2sph" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    <iframe id="step2form2" style="display: none;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7909597.538467392!2d115.76214694891785!3d14.535804609364456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c8161b3de0b1%3A0xb418ec0d51df62a4!2sEgg!5e0!3m2!1sen!2sph!4v1717553481455!5m2!1sen!2sph" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    <iframe id="step2form3" style="display: none;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3018.9225362197994!2d-73.88367092358195!3d40.829665130403306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f4f09c42d50d%3A0xdf56ea1520582f14!2s1234%20Evergreen%20Ave%2C%20Bronx%2C%20NY%2010472%2C%20USA!5e0!3m2!1sen!2sph!4v1717513890511!5m2!1sen!2sph" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
+                                    <iframe id="step2form4" style="display: none;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7909597.538467392!2d115.76214694891785!3d14.535804609364456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c8161b3de0b1%3A0xb418ec0d51df62a4!2sEgg!5e0!3m2!1sen!2sph!4v1717553481455!5m2!1sen!2sph" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    <iframe id="step2form5" style="display: none;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3018.9225362197994!2d-73.88367092358195!3d40.829665130403306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f4f09c42d50d%3A0xdf56ea1520582f14!2s1234%20Evergreen%20Ave%2C%20Bronx%2C%20NY%2010472%2C%20USA!5e0!3m2!1sen!2sph!4v1717513890511!5m2!1sen!2sph" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
+                                    <iframe id="step2form6" style="display: none;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7909597.538467392!2d115.76214694891785!3d14.535804609364456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c8161b3de0b1%3A0xb418ec0d51df62a4!2sEgg!5e0!3m2!1sen!2sph!4v1717553481455!5m2!1sen!2sph" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    <iframe id="step2form7" style="display: none;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3018.9225362197994!2d-73.88367092358195!3d40.829665130403306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f4f09c42d50d%3A0xdf56ea1520582f14!2s1234%20Evergreen%20Ave%2C%20Bronx%2C%20NY%2010472%2C%20USA!5e0!3m2!1sen!2sph!4v1717513890511!5m2!1sen!2sph" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    <p><b>Location</b></p>
+                                    <div class="radio-buttons">
+                                        <label>
+                                            <input type="radio" name="location" value="step2form1" checked>
+                                            In the heart of an international site
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="location" value="step2form2">
+                                            Less than 30 minutes away from an international site
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="location" value="step2form3">
+                                            Less than 30 minutes away from an international site
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="location" value="step2form4">
+                                            Less than 30 minutes away from a national site
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="location" value="step2form5">
+                                            Less than 30 minutes away from an international site
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="location" value="step2form6">
+                                            Less than 30 minutes away from a local site
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="location" value="step2form7">
+                                            More than 30 minutes away from all tourist sites
+                                        </label>                        
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="add-homeSec2">
+                            <img src="images/Smart home-amico.png" alt="">
+                        </div>
+                    </div>
+                    <script>
+                        
+                    </script>
+                    
+                    <section id="black-line">
+                        <div class="black-line"></div>
+                    </section>
+        
+                    <footer id="add-homeSec-footer">
+                        <div class="inputBtn" id="step2">
+                            <button type="button" class="prevBtn">Previous</button>
+                            <button type="button" class="nextBtn">Next</button>
+                        </div>
+                    </footer>
+                </section>
+            </div>
+
+            <div class="wizard-step" data-step="3">
+                <navbar class="section-navbar inner-pages-navbar add-home-tab">
+                    <nav class="main-navbar">
+                        <a href="/index.html"><img src="images/logoMain.webp"></a>
+                        <h3><b>STEP 3 / 7</b></h3>
+                    </nav>
+                </navbar>
+            
+                <section class="AddHomeTab-step3">
+                    <div class="inner-main-sec">
+                        <div class="add-homeSec1">
+                            <div class="content">
+                                <h1>How Would You Describe Your Home's Direct Surroundings?</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                <div class="add-home-tab-optionSec">        
+                                    <p><b>Location</b></p>
+                                    <script>
+                                        // JavaScript Logic
+                                        // document.addEventListener('DOMContentLoaded', function() {
+                                        // const accordionItems = document.querySelectorAll('.accordion-item');
+                                    
+                                        //     accordionItems.forEach(item => {
+                                        //         const header = item.querySelector('.accordion-header');
+                                        
+                                        //         header.addEventListener('click', () => {
+                                        //         alert('Hey!');
+                                        //         const isActive = item.classList.contains('active');
+                                        
+                                        //         accordionItems.forEach(item => {
+                                        //             item.classList.remove('active');
+                                        //         });
+                                        
+                                        //         if (!isActive) {
+                                        //             item.classList.toggle('active');
+                                        //         }
+                                        //         });
+                                        //     });
+                                        // });
+                                    </script>
+            
+                                    <div class="accordion">
+                                        <div class="accordion-item">
+                                            <div class="accordion-header">
+                                                Village
+                                                <i class="fa fa-caret-down" aria-hidden="true"></i> <!-- Font Awesome icon -->
+                                            </div>
+                                            <div class="accordion-content">
+                                                <p>Content for section 1</p>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <div class="accordion-header">
+                                                River
+                                                <i class="fa fa-caret-down" aria-hidden="true"></i> <!-- Font Awesome icon -->
+                                            </div>
+                                            <div class="accordion-content">
+                                                <p>Content for section 2</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="add-homeSec2">
+                            <img src="images/Smart home-amico.png" alt="">
+                        </div>
+                    </div>
+        
+        
+                    <section id="black-line">
+                        <div class="black-line"></div>
+                    </section>
+        
+                    <footer id="add-homeSec-footer">
+                        <div class="inputBtn step3" id="step2">
+                            <button type="button" class="prevBtn">Previous</button>
+                            <div class="inputBtnStep3">
+                                <button type="button" class="nextBtn">Next</button>
+                            </div>
+                        </div>
+                    </footer>
+                </section>
+            </div>
+
+
+            <div class="wizard-step" data-step="4">
+                <navbar class="section-navbar inner-pages-navbar add-home-tab">
+                    <nav class="main-navbar">
+                        <a href="/index.html"><img src="images/logoMain.webp"></a>
+                        <h3><b>STEP 4 / 7</b></h3>
+                    </nav>
+                </navbar>
+
+                <section class="AddHomeTab-step4">
+                    <div class="inner-main-sec">
+                        <div class="add-homeSec1">
+                            <div class="content">
+                                <h1>What Size Is Your Home?</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                <div class="add-home-tab-optionSec">        
+                                    <p><b>Surface Area</b></p>
+                                    <div class="accordion step4">
+                                        <div class="accordion-item">
+                                            <div class="accordion-header">
+                                                30
+                                                <i class="fa fa-caret-down" aria-hidden="true"></i> <!-- Font Awesome icon -->
+                                            </div>
+                                            <div class="accordion-content">
+                                                <p>Content for section 1</p>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <div class="accordion-header">
+                                                m²
+                                                <i class="fa fa-caret-down" aria-hidden="true"></i> <!-- Font Awesome icon -->
+                                            </div>
+                                            <div class="accordion-content">
+                                                <p>Content for section 2</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="counterSec">
+                                        <div class="counter1">
+                                            <img src="images/bedroom.png" alt="">
+                                            <p>Bedrooms</p>
+                                            <i class="fa fa-minus" onclick="decrementCounter(0)"></i>
+                                            <div class="count-num" id="counter1">0</div>
+                                            <i class="fa fa-plus" onclick="incrementCounter(0)"></i>
+                                        </div>
+                                        <div class="counter1">
+                                            <img src="images/bathroom.png" alt="">
+                                            <p>Bathrooms</p>
+                                            <i class="fa fa-minus" onclick="decrementCounter(1)"></i>
+                                            <div class="count-num" id="counter2">0</div>
+                                            <i class="fa fa-plus" onclick="incrementCounter(1)"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="add-homeSec2 step4">
+                            <img src="images/Early morning-pana.png" alt="">
+                        </div>
+                    </div>
+        
+                    <section id="black-line">
+                        <div class="black-line"></div>
+                    </section>
+                    <footer id="add-homeSec-footer">
+                        <div class="inputBtn step3" id="step2">
+                            <button type="button" class="prevBtn">Previous</button>
+                            <div class="inputBtnStep3">
+                                <button type="button" class="nextBtn">Next</button>
+                            </div>
+                        </div>
+                    </footer>
+                </section>
+            </div>
+
+
+            <div class="wizard-step" data-step="5">
+                <navbar class="section-navbar inner-pages-navbar add-home-tab">
+                    <nav class="main-navbar">
+                        <a href="/index.html"><img src="images/logoMain.webp"></a>
+                        <h3><b>STEP 5 / 7</b></h3>
+                    </nav>
+                </navbar>
+            
+                <section class="AddHomeTab-step5">
+                    <div class="inner-main-sec">
+                        <div class="add-homeSec1">
+                            <div class="content">
+                            <h1>How Many People Does Your Home Sleep?</h1>
+                            <div class="add-home-tab-optionSec"> 
+                            
+                                <div class="counterSec step5">
+                                    <div class="counter1">
+                                        <div class="imgTxt">
+                                        <img src="images/bedroom.png" alt="">
+                                        <p>Single beds</p>
+                                        </div>
+                                        <div class="counTer">
+                                            <i class="fa fa-minus" onclick="decrementCounter(2)"></i>
+                                            <div class="count-num" id="counter3">0</div>
+                                            <i class="fa fa-plus" onclick="incrementCounter(2)"></i>
+                                        </div>
+                                    </div>
+                                    <div class="counter1">
+                                        <div class="imgTxt">
+                                        <img src="images/bedroom.png" alt="">
+                                        <p>Double beds</p>
+                                        </div>
+                                        <div class="counTer">
+                                            <i class="fa fa-minus" onclick="decrementCounter(3)"></i>
+                                            <div class="count-num" id="counter4">0</div>
+                                            <i class="fa fa-plus" onclick="incrementCounter(3)"></i>
+                                        </div>
+                                    </div>
+                                    <div class="counter1">
+                                        <div class="imgTxt">
+                                        <img src="images/bedroom.png" alt="">
+                                        <p>Big double beds</p>
+                                        </div>
+                                        <div class="counTer">
+                                            <i class="fa fa-minus" onclick="decrementCounter(4)"></i>
+                                            <div class="count-num" id="counter5">0</div>
+                                            <i class="fa fa-plus" onclick="incrementCounter(4)"></i>
+                                        </div>
+                                    </div>
+                                    <div class="counter1">
+                                        <div class="imgTxt">
+                                        <img src="images/bedroom.png" alt="">
+                                        <p>Single beds</p>
+                                        </div>
+                                        <div class="counTer">
+                                            <i class="fa fa-minus" onclick="decrementCounter(5)"></i>
+                                            <div class="count-num" id="counter6">0</div>
+                                            <i class="fa fa-plus" onclick="incrementCounter(5)"></i>
+                                        </div>
+                                    </div>
+                                    <div class="counter1">
+                                        <div class="imgTxt">
+                                        <img src="images/bedroom.png" alt="">
+                                        <p>Children's beds</p>
+                                        </div>
+                                        <div class="counTer">
+                                            <i class="fa fa-minus" onclick="decrementCounter(6)"></i>
+                                            <div class="count-num" id="counter7">0</div>
+                                            <i class="fa fa-plus" onclick="incrementCounter(6)"></i>
+                                        </div>
+                                    </div>
+                                    <div class="counter1">
+                                        <div class="imgTxt">
+                                        <img src="images/bedroom.png" alt="">
+                                        <p>Double put-up beds</p>
+                                        </div>
+                                        <div class="counTer">
+                                            <i class="fa fa-minus" onclick="decrementCounter(7)"></i>
+                                            <div class="count-num" id="counter8">0</div>
+                                            <i class="fa fa-plus" onclick="incrementCounter(7)"></i>
+                                        </div>
+                                    </div>
+                                    <div class="counter1">
+                                        <div class="imgTxt">
+                                        <img src="images/bedroom.png" alt="">
+                                        <p>Children's put-up beds</p>
+                                        </div>
+                                        <div class="counTer">
+                                            <i class="fa fa-minus" onclick="decrementCounter(8)"></i>
+                                            <div class="count-num" id="counter9">0</div>
+                                            <i class="fa fa-plus" onclick="incrementCounter(8)"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            </div>
+                        </div>
+                        <div class="add-homeSec2 step4">
+                            <img src="images/Early morning-pana.png" alt="">
+                        </div>
+                    </div>
+        
+                    <section id="black-line">
+                        <div class="black-line"></div>
+                    </section>
+        
+                    <footer id="add-homeSec-footer">
+                        <div class="inputBtn step3" id="step2">
+                            <button type="button" class="prevBtn">Previous</button>
+                            <div class="inputBtnStep3">
+                                <button type="button" class="nextBtn">Next</button>
+                            </div>
+                        </div>
+                    </footer>
+                </section>
+            </div>
+
+
+            <div class="wizard-step" data-step="6">
+                <navbar class="section-navbar inner-pages-navbar add-home-tab">
+                    <nav class="main-navbar">
+                        <a href="/index.html"><img src="images/logoMain.webp"></a>
+                        <h3><b>STEP 6 / 7</b></h3>
+                    </nav>
+                </navbar>
+            
+                <section class="AddHomeTab-step6">
+                    <div class="inner-main-sec">
+                        <div class="add-homeSec1">
+                            <div class="content">
+                                <h1>Tell The Exchangers What Amenities They Will Find In Your Home</h1>
+                                <div class="add-home-tab-optionSec">
+                                    <p><b>Your basics</b></p>
+                                        <div id="basicSec">
+                                            <div class="basicSec">
+                                                <div class="basicContain">
+                                                    <img src="images/wifi.webp" alt="">
+                                                    <p>WIFI</p>
+                                                </div>
+                                                <div class="basicContain">
+                                                    <img src="images/tv.webp" alt="">
+                                                    <p>TV</p>
+                                                </div>
+                                                <div class="basicContain">
+                                                    <img src="images/bathtub.webp" alt="">
+                                                    <p>Bathtub</p>
+                                                </div>
+                                                <div class="basicContain">
+                                                    <img src="images/dishwaching.webp" alt="">
+                                                    <p>Dishwasher</p>
+                                                </div>
+                                                <div class="basicContain">
+                                                    <img src="images/waching-machine.webp" alt="">
+                                                    <p>Waching Machine</p>
+                                                </div>
+                                                <div class="basicContain">
+                                                    <img src="images/dryer.webp" alt="">
+                                                    <p>Dryer</p>
+                                                </div>
+                                                <div class="basicContain">
+                                                    <img src="images/radiotor.webp" alt="">
+                                                    <p>Heating System</p>
+                                                </div>
+                                                <div class="basicContain">
+                                                    <img src="images//electric-car.webp" alt="">
+                                                    <p>Electric Car</p>
+                                                </div>
+                                                <div class="basicContain">
+                                                    <img src="images/wheelchair.webp" alt="">
+                                                    <p>Wheelchair</p>
+                                                </div>
+                                            </div>
+                                                <div class="basicTxt">
+                                                    <p>See more</p>
+                                                </div>
+                                        </div>
+        
+                                        <p><b>Your Unique Facilities</b></p>
+                                        <div id="basicSec">
+                                            <div class="basicSec">
+                                                <div class="basicContain">
+                                                    <img src="images/pool.webp" alt="">
+                                                    <p>POOL</p>
+                                                </div>
+                                                <div class="basicContain">
+                                                    <img src="images/garden.webp" alt="">
+                                                    <p>Private Garden</p>
+                                                </div>
+                                                <div class="basicContain">
+                                                    <img src="images/balcony.webp" alt="">
+                                                    <p>Balacony</p>
+                                                </div>
+                                                <div class="basicContain">
+                                                    <img src="images/elevator.webp" alt="">
+                                                    <p>Elevator</p>
+                                                </div>
+                                                <div class="basicContain">
+                                                    <img src="images/aircon.webp" alt="">
+                                                    <p>A / C</p>
+                                                </div>
+                                                <div class="basicContain">
+                                                    <img src="images/fireplace.webp" alt="">
+                                                    <p>Fireplace</p>
+                                                </div>
+                                                <div class="basicContain">
+                                                    <img src="images/private-car.webp" alt="">
+                                                    <p>Private parking</p>
+                                                </div>
+                                                <div class="basicContain">
+                                                    <img src="images//car.webp" alt="">
+                                                    <p>Car</p>
+                                                </div>
+                                                <div class="basicContain">
+                                                    <img src="images/bicycle.webp" alt="">
+                                                    <p>Bicycle</p>
+                                                </div>
+                                            </div>
+                                                <div class="basicTxt">
+                                                    <p>See more</p>
+                                                </div>
+                                        </div>
+        
+                                        <p><b>Eco-Friendly Amenities</b></p>
+                                        <div id="basicSec">
+                                            <div class="basicSec">
+                                                <div class="basicContain">
+                                                    <img src="images/renewable-energy.webp" alt="">
+                                                    <p>Renewable Energy</p>
+                                                </div>
+                                                <div class="basicContain">
+                                                    <img src="images/electric-clock.webp" alt="">
+                                                    <p>Low Consume</p>
+                                                </div>
+                                                <div class="basicContain">
+                                                    <img src="images/recycle-trash.webp" alt="">
+                                                    <p>Selective water</p>
+                                                </div>
+                                                <div class="basicContain">
+                                                    <img src="images/vegetable-garden.webp" alt="">
+                                                    <p>Vegetable Garden</p>
+                                                </div>
+                                                <div class="basicContain">
+                                                    <img src="images/train.webp" alt="">
+                                                    <p>Public transportation</p>
+                                                </div>
+                                                <div class="basicContain">
+                                                    <img src="images/solar-panel.webp" alt="">
+                                                    <p>Solar Panels</p>
+                                                </div>
+                                            </div>
+                                        </div>
+        
+                                        <p style="padding-top: 50px;"><b>Allergies *</b></p>
+                                        <p>I have pets living in my home</p>
+                                        <p>Some animals may cause allergy symptoms.</p>
+                                        <div class="radio-buttons">
+                                            <label>
+                                                <input type="radio" name="form-toggle" value="step2form1" checked>
+                                                Yes
+                                            </label>
+                                            <label>
+                                                <input type="radio" name="form-toggle" value="step2form1" checked>
+                                                No
+                                            </label>
+                                        </div>
+                                        
+        
+                                </div>
+                            </div>
+                        </div>
+                    <div class="add-homeSec2 step4">
+                        <img src="images/breakfast from bed-pana.png" alt="">
+                    </div>
+                    </div>
+        
+                    <section id="black-line">
+                        <div class="black-line"></div>
+                    </section>
+        
+                    <footer id="add-homeSec-footer">
+                        <div class="inputBtn step3" id="step2">
+                            <button type="button" class="prevBtn">Previous</button>
+                            <div class="inputBtnStep3">
+                                <button type="button" class="nextBtn">Next</button>
+                            </div>
+                        </div>
+                    </footer>
+                </section>
+            </div>
+
+            <div class="wizard-step" data-step="7">
+                <navbar class="section-navbar inner-pages-navbar add-home-tab">
+                    <nav class="main-navbar">
+                        <a href="/index.html"><img src="images/logoMain.webp"></a>
+                        <h3><b>STEP 7 / 7</b></h3>
+                    </nav>
+                </navbar>
+            
+                <section class="AddHomeTab-step7">
+                    <div class="inner-main-sec">
+                        <div class="add-homeSec1">
+                            <div class="content">
+                            <h1>How Many People Does Your Home Sleep?</h1>
+                            <div class="add-home-tab-optionSec step7-page7"> 
+                                <p><b>Your home:</b></p>
+                                <textarea name="" id="" rows="10"></textarea>
+                                <p><b>Your neighborhood:</b></p>
+                                <textarea name="" id="" rows="10"></textarea>  
+                            </div>
+                            </div>
+                        </div>
+                        <div class="add-homeSec2 step4">
+                            <img src="images/Home cinema-pana (1).png" alt="">
+                        </div>
+                    </div>
+        
+                    <section id="black-line">
+                        <div class="black-line"></div>
+                    </section>
+        
+                    <footer id="add-homeSec-footer">
+                        <div class="inputBtn step3" id="step2">
+                            <button type="button" class="prevBtn">Previous</button>
+                            <div class="inputBtnStep3">
+                                <button type="submit" class="submitBtn nextBtn">Submit</button>
+                            </div>
+                        </div>
+                    </footer>
+                </section>
+            </div>
+        </form>
+    </div>
+
+
+    <!-- <button type="button" class="prevBtn">Previous</button>
+    <button type="submit" class="submitBtn">Submit</button> -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/js.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            let currentStep = 1;
+
+            $(".nextBtn").click(function () {
+                let step = $(this).closest('.wizard-step').data('step');
+                if (validateStep(step)) {
+                    changeStep(step + 1);
+                }
+            });
+
+            $(".prevBtn").click(function () {
+                let step = $(this).closest('.wizard-step').data('step');
+                changeStep(step - 1);
+            });
+
+            function validateStep(step) {
+                let valid = true;
+                $(`[data-step="${step}"] input`).each(function () {
+                    if (!$(this).val()) {
+                        valid = false;
+                        alert('Please fill out all fields');
+                        return false;
+                    }
+                });
+                return valid;
+            }
+
+            function changeStep(step) {
+                $(".wizard-step").removeClass('active');
+                $(`[data-step="${step}"]`).addClass('active');
+                currentStep = step;
+            }
+
+            $("#wizardForm").submit(function (e) {
+                e.preventDefault();
+                if (validateStep(currentStep)) {
+                    alert('Form submitted successfully!');
+                }
+            });
+
+
+
+            $('.accordion-item').click(function(){
+                $(this).find('.accordion-content').toggleClass('active');
+            });
+        });
+
+    </script>
+</body>
+</html>

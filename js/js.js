@@ -29,70 +29,90 @@ jQuery(document).ready(function() {
 
 
 // js for Create-Your-Listing-Main-Page-Add-Home-Tab-Step-4.html and Create-Your-Listing-Main-Page-Add-Home-Tab-Step-5.html
-let count = 0;
-let count2 = 0; 
-let count3 = 0;
-let count4 = 0;
-let count5 = 0;
-let count6 = 0;
-let count7 = 0;
-function incrementCounter() {
-    count++;
-    document.getElementById('counter').innerText = count;
-}
-function incrementCounter2() {
-  count2++;
-  document.getElementById('counter2').innerText = count2;
-}
-function incrementCounter3() {
-  count3++;
-  document.getElementById('counter3').innerText = count3;
-}
-function incrementCounter4() {
-  count4++;
-  document.getElementById('counter4').innerText = count4;
-}
-function incrementCounter5() {
-  count5++;
-  document.getElementById('counter5').innerText = count5;
-}
-function incrementCounter6() {
-  count6++;
-  document.getElementById('counter6').innerText = count6;
-}
-function incrementCounter7() {
-  count7++;
-  document.getElementById('counter7').innerText = count7;
-}
-function DeCounter() {
-    count--;
-    document.getElementById('counter').innerText = count;
-}
-function DeCounter2() {
-  count2--;
-  document.getElementById('counter2').innerText = count2;
-}
-function DeCounter3() {
-  count3--;
-  document.getElementById('counter3').innerText = count3;
-}
-function DeCounter4() {
-  count4--;
-  document.getElementById('counter4').innerText = count4;
-}
-function DeCounter5() {
-  count5--;
-  document.getElementById('counter5').innerText = count5;
-}
-function DeCounter6() {
-  count6--;
-  document.getElementById('counter6').innerText = count6;
-}
-function DeCounter7() {
-  count7--;
-  document.getElementById('counter7').innerText = count7;
-}
+// let count = 0;
+// let count2 = 0; 
+// let count3 = 0;
+// let count4 = 0;
+// let count5 = 0;
+// let count6 = 0;
+// let count7 = 0;
+// function incrementCounter() {
+//     count++;
+//     document.getElementById('counter').innerText = count;
+// }
+// function incrementCounter2() {
+//   count2++;
+//   document.getElementById('counter2').innerText = count2;
+// }
+// function incrementCounter3() {
+//   count3++;
+//   document.getElementById('counter3').innerText = count3;
+// }
+// function incrementCounter4() {
+//   count4++;
+//   document.getElementById('counter4').innerText = count4;
+// }
+// function incrementCounter5() {
+//   count5++;
+//   document.getElementById('counter5').innerText = count5;
+// }
+// function incrementCounter6() {
+//   count6++;
+//   document.getElementById('counter6').innerText = count6;
+// }
+// function incrementCounter7() {
+//   count7++;
+//   document.getElementById('counter7').innerText = count7;
+// }
+// function DeCounter() {
+//     count--;
+//     document.getElementById('counter').innerText = count;
+// }
+// function DeCounter2() {
+//   count2--;
+//   document.getElementById('counter2').innerText = count2;
+// }
+// function DeCounter3() {
+//   count3--;
+//   document.getElementById('counter3').innerText = count3;
+// }
+// function DeCounter4() {
+//   count4--;
+//   document.getElementById('counter4').innerText = count4;
+// }
+// function DeCounter5() {
+//   count5--;
+//   document.getElementById('counter5').innerText = count5;
+// }
+// function DeCounter6() {
+//   count6--;
+//   document.getElementById('counter6').innerText = count6;
+// }
+// function DeCounter7() {
+//   count7--;
+//   document.getElementById('counter7').innerText = count7;
+// }
 //! js for Create-Your-Listing-Main-Page-Add-Home-Tab-Step-4.html
+
+
+let counters = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,];
+
+
+function updateCounter(index) {
+    document.getElementById('counter' + (index + 1)).innerText = counters[index];
+}
+
+function incrementCounter(index) {
+    counters[index]++;
+    updateCounter(index);
+}
+
+function decrementCounter(index) {
+    counters[index]--;
+    updateCounter(index);
+}
+
+
 
 // js for Create-Your-Listing-Main-Page-Add-Home-Tab.html
 document.addEventListener('DOMContentLoaded', () => {
@@ -252,22 +272,3 @@ let slideIndex = 0;
 
 
 
-    document.addEventListener('DOMContentLoaded', function() {
-        const accordionItems = document.querySelectorAll('.accordion-item');
-    
-        accordionItems.forEach(item => {
-          const header = item.querySelector('.accordion-header');
-    
-          header.addEventListener('click', () => {
-            const isActive = item.classList.contains('active');
-    
-            accordionItems.forEach(item => {
-              item.classList.remove('active');
-            });
-    
-            if (!isActive) {
-              item.classList.add('active');
-            }
-          });
-        });
-      });

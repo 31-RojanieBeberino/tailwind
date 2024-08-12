@@ -710,14 +710,14 @@ overflow: hidden; /* Ensure smooth animation */
 }
 
 .accordion .accordion-header {
-background-color: #f4f4f4;
-padding: 20px;
-cursor: pointer;
-display: flex;
-font-size: 20px;
-justify-content: space-between;
-align-items: center;
-transition: background-color 0.3s ease; /* Smooth transition */
+    background-color: #f4f4f4;
+    padding: 20px;
+    cursor: pointer;
+    display: flex;
+    font-size: 20px;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease; /* Smooth transition */
 }
 
 .accordion .accordion-header .icon {
@@ -734,11 +734,11 @@ background-color: #e0e0e0;
 }
 
 .accordion .accordion-item.active .accordion-header .icon {
-transform: rotate(90deg); /* Rotate icon when accordion is active */
+    transform: rotate(90deg); /* Rotate icon when accordion is active */
 }
 
-.accordion .accordion-item.active .accordion-content {
-display: block; /* Show content when accordion is active */
+.active {
+    display: block!important; /* Show content when accordion is active */
 }
 
 
@@ -753,6 +753,10 @@ display: block; /* Show content when accordion is active */
 
 .inner-section-contact-form div{
     flex: 1;
+}
+
+.section-contact-form .contact-submit{
+    cursor: pointer;
 }
 
 .contact-sec {
@@ -2412,10 +2416,10 @@ img.toggle-profile {
     max-width: 1330px;
     width: 100%;
 }
-.inputBtn input[type="button"] {
+.inputBtn button {
     cursor: pointer;
 }
-.inputBtn input[type="button"] {
+.inputBtn button {
     --orange: #FF6700;
     background: var(--orange);
     padding: 20px 40px;
@@ -2429,7 +2433,7 @@ img.toggle-profile {
     justify-content: space-between;
 }
 
-.inputBtn input[type="button"]:nth-child(1) {
+.inputBtn button:nth-child(1) {
     background: #CCCCCC;
     color: #000;
 }
@@ -2451,7 +2455,7 @@ img.toggle-profile {
 .accordion.step4 {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 .step4 .accordion-item:nth-child(1) {
     width: 65%;
@@ -2469,22 +2473,24 @@ img.toggle-profile {
     border: 1px solid #FF6700;
     padding: 5px;
     border-radius: 50%;
-    --g: #FF6700;
-    color: var(--g);
+    color: #FF6700;
     cursor: pointer;
-    height: 30px;
-    width: 30px;
+    height: 30px!important;
+    width: 30px!important;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.counTer div{
-    width: 30px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+
+.count-num{
+    font-size: 20px!important;
+    width: 30px!important;
+    text-align: center!important;
 }
+
+
+
+
 div#counter, div#counter2, div#counter3,
 div#counter4, div#counter5, div#counter6,
 div#counter7 {

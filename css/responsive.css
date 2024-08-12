@@ -368,6 +368,31 @@
     .exchanges-page .add-homeSec2 img {
         height: 380px;
     }
+
+    .inputBtn button{
+        width: 250px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .basicSec{
+        gap:15px;
+    }
+
+    .basicSec .basicContain{
+        flex: 0 0 calc(100%/2.1);
+    }
+
+    #add-home-tab .inner-main-sec,
+    .AddHomeTab-step1 .inner-main-sec, 
+    .AddHomeTab-step2 .inner-main-sec, 
+    .AddHomeTab-step3 .inner-main-sec, 
+    .AddHomeTab-step4 .inner-main-sec, 
+    .AddHomeTab-step5 .inner-main-sec, 
+    .AddHomeTab-step6 .inner-main-sec, 
+    .AddHomeTab-step7 .inner-main-sec{
+        padding:130px 20px 50px;
+    }
 }
 
 @media (max-width: 539px) {
@@ -731,6 +756,7 @@
     .inputBtnStep3 {
         flex-direction: column;
         width: 100%;
+        align-items: center;
     }
     input[type="button"] {
         width: 100%;
