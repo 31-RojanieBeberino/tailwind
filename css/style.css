@@ -97,10 +97,6 @@ h1, h2, h3, h4, h5, p, a, div, input, select, textarea {
     z-index: 10000;
 }
 
-#homepage-navbar {
-    /* position: fixed; */
-}
-
 
 .main-navbar{
     width:100%;
@@ -2187,9 +2183,8 @@ img.toggle-profile {
 .section-navbar.add-home-tab {
     position: static;
 }
-.inner-pages-navbar.add-home-tab {
-    /* position: static !important; */
-}
+
+
 #add-home-tab, .AddHomeTab-step1,  .AddHomeTab-step2, .AddHomeTab-step3, .AddHomeTab-step4,
 .AddHomeTab-step5, .AddHomeTab-step6, .AddHomeTab-step7 {
     display: flex;
