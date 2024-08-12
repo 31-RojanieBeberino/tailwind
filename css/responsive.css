@@ -871,9 +871,6 @@
     }
 }
 @media (max-width: 350px) {
-    .faqs-content {
-        /* width: 95%; */
-    }
     .follow-btn.membership {
         width: 100%;
     }
